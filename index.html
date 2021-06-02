@@ -9,31 +9,193 @@
   <link rel="preload" href="assets/styles/styles.css" as="style"/>
   <link rel="stylesheet" href="assets/lib/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="assets/lib/animate.min.css">
+  <link rel="stylesheet" href="assets/lib/OwlCarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/lib/OwlCarousel/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="assets/styles/styles.css" />
-  <title>Landing title</title>
+  <title>Oga</title>
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <p class="h1">
-            Header
-          </p>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <!-- TODO: necesito el logo con el ovalo que tiene de fondo -->
+          <img src="assets/images/Group_220.svg" alt="Oga Ciudad jardin">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                El proyecto
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">El proyecto</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Amenities</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Unidades</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Financiación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Respaldo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Soy dueño</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
-  <section>
+  <section id="banner">
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="assets/images/Elementos-web-02.jpg" alt="Ciudad jardin"></div>
+      <!-- TODO: Faltan las otras imagenes de banner -->
+      <div class="item"><img src="assets/images/Elementos-web-02.jpg" alt="Ciudad jardin"></div>
+      <div class="item"><img src="assets/images/Elementos-web-02.jpg" alt="Ciudad jardin"></div>
+      <div class="item"><img src="assets/images/Elementos-web-02.jpg" alt="Ciudad jardin"></div>
+    </div>
+  </section>
+  <section id="piebanner">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <h1>Landing title</h1>
-          <p>NOTA: git init no iniciado</p>
+        <div class="col-5">
+          <h2 class="pbtittle">¡Sé dueño DESDE YA y empezá a pagar cuando te mudes!</h2>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btnbanner">Consultar ahora</button>
+        </div>
+      <!-- TODO: Falta imagen de esta parte -->
+      <!--   <div class="col-3">
+          <img src="" alt="">
+        </div>-->
+       </div>
+    </div>
+  </section>
+  <section id="finance">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h1 class="ftittle" style="font-weight: 900">Financiá el 100% del valor de la propiedad</h1>
+          <h5 class="ftittle2" style="color: #1A1A1A">Contamos con un sistema de ﬁnanciación pionero en el mercado.</h5>
+          <div class="fgrid">
+            <div class="item1"><img src="assets/images/Group_142.svg" alt="Ciudad jardin"></div>
+            <div class="item2"><h5>Compra sin inicial</h5></div>
+            <div class="item3"><img src="assets/images/Group_143.svg" alt="Ciudad jardin"></div>
+            <div class="item4">
+              <h5 class="mb-0">Cuotas como un alquiler</h5>
+              <h2 style="font-weight: 900" class="mb-0">Desde Gs. 3.415.268</h2>
+            </div>
+            <div class="item5"><img src="assets/images/Group_144.svg" alt="Ciudad jardin"></div>
+            <div class="item6"><h5>Comienza a pagar con la entrega de tu departamento</h5></div>
+          </div>
+        </div>
+        <div class="col-6">
+          <img src="assets/images/pareja-min.png" alt="Ciudad jardin" class="fibanner">
         </div>
       </div>
     </div>
   </section>
+  <section id="fbanner">
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <h1 class="fbtittle">¡Solicitá tu plan ahora!</h1>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-primary btnfbanner">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Project">
+    <div class="container project1">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="ptittle">Un proyecto con el respaldo de</h4>
+        </div>
+        <div class="col-12 back">
+          <div class="pgrid">
+            <div class="item1"><img src="assets/images/Group_142.svg" alt="Ciudad jardin"></div>
+            <div class="item2"><img src="assets/images/Group_142.svg" alt="Ciudad jardin"></div>
+            <div class="item3"><img src="assets/images/Group_142.svg" alt="Ciudad jardin"></div>
+            <div class="item4"><img src="assets/images/Group_142.svg" alt="Ciudad jardin"></div>
+            <div class="item5"><img src="assets/images/Group_142.svg" alt="Ciudad jardin"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid project2">
+      <div class="row">
+        <div class="col-12">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid project3">
+      <div class="row">
+        <div class="col-12 col-md-6 cproject3">
+          <h2>Contactanos</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-floating">
+              <input type="text" class="form-control" placeholder="Nombre" name="name" required>
+              <label for="name">Nombre*</label>
+            </div>
+            <div class="form-floating">
+              <input type="email" class="form-control" placeholder="Email" name="email" required>
+              <label for="email">Email*</label>
+            </div>
+            <div class="form-floating">
+              <input type="tel" class="form-control" placeholder="Telefono" name="phone" required>
+              <label for="name">Telefono*</label>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" name="consult" style="height: 110px" placeholder="Consulta" required></textarea>
+              <label for="consult">Consulta*</label>
+            </div>
+            <button class="btn btn-primary mt-3 btnfbanner" type="submit" onclick="submited()">Enviar</button>
+          </form>
+          <div id="formSending" style="display: none;">
+            <p class="h3 strong">
+              Enviando
+              <span></span>
+              <span></span>
+              <span></span>
+            </p>
+          </div>
+          <div id="formSuccess" style="display: none;">
+            <p class="h3 strong">¡Consulta Enviada!</p>
+          </div>
+          <div id="formError" style="display: none;">
+            <p class="h3 strong">¡Error en el envio de su consulta.<br>Por favor intentar mas tarde!</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 offset-lg-1 col-lg-5 red">
+          <h5>Oficinas para trato personalizado en Argentina, Uruguay y Paraguay</h5>
+          <div class="shared d-none">
+            <a href="#" target="_blank" onclick='return false'>
+              <img src="assets/icons/facebook.svg" class="facebook">
+            </a>
+            <a href="#" target="_blank" onclick='return false'>
+              <img src="assets/icons/instagram.svg" class="ms-4">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div class="container">
       <div class="row">
@@ -45,8 +207,10 @@
       </div>
     </div>
   </footer>
+
 <script type="text/javascript" src="assets/lib/jquery.min.js"></script>
 <script type="text/javascript" src="assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/lib/OwlCarousel/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/lib/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/index.js"></script>
 </body>

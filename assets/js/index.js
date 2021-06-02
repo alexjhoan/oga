@@ -11,3 +11,10 @@ if (screen.width > 768){
 }
 
 new WOW({offset:offset, scrollContainer: null}).init()
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    items:1,
+    margin:0,
+    nav:true,
+})

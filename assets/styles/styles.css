@@ -20,6 +20,9 @@ a{
   font-family: Roboto;
   color: var(--text-secondary);
 }
+a:hover {
+    color: #f1f1f1;
+}
 p,div,input,button,textarea{
   font-family: Roboto;
   color: var(--text-secondary);
@@ -50,12 +53,15 @@ section {
 
 /*----------------------------Web-------------------------------*/
 /*---------------Header------------------*/
-header{
-  top: 0px;
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
   left: 0px;
   height: 57px;
-  background: rgba(87, 22, 163, .6);
-  }
+  background: rgba(87, 22, 163, .8);
+}
 .nav-link {
   text-align: left;
   font: normal normal medium 16px/22px Poppins;
@@ -65,6 +71,19 @@ header{
 .navbar-nav {
   margin-left: auto;
   padding-right: 17px;
+}
+.navbar-expand-lg .navbar-collapse {
+  display: flex!important;
+  top: 0;
+  bottom: 0;
+  margin-bottom: auto;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(250,250,250,.55) !important;
+  border-color: rgba(250,250,250,.55) !important;
+  top: 0;
+  bottom: 0;
+  margin-bottom: auto;
 }
 
 /*---------------Banner------------------*/
@@ -285,9 +304,8 @@ button.owl-prev span {
 .project3 {
   background-color: #5716A3;
   position: relative;
-}
-.cproject3 {
-  margin-left: 132px;
+  padding-left: 132px;
+  padding-top: 10px;
 }
 .form-floating {
   width: 486px;
@@ -295,8 +313,13 @@ button.owl-prev span {
 #contactForm label {
   color: #494846;
 }
-.project3 h2 {
+.project3 h3 {
   margin-bottom: 36px;
+  color: white;
+}
+.dtittle{
+  margin-top: 50px;
+  margin-bottom: 100px;
   color: white;
 }
 .project3 h5 {
@@ -313,24 +336,14 @@ button.owl-prev span {
   border-radius: 0;
   height: 100px;
 }
-.project3 .red{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 8%;
-}
-
 .project3 p.strong {
   color: white;
 }
-
 .project3 #formSending p.strong {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
-
 .project3 #formSending p.strong span {
   background: #fff;
   height: 6px;
@@ -339,7 +352,55 @@ button.owl-prev span {
   margin: 0 3px;
   animation: sending 1s infinite;
 }
-
+img.facebook {
+  margin-right: 30px;
+}
+.privacy{
+  padding-top: 144px;
+}
+.col-7.red {
+  padding-left: 133px;
+  padding-right: 122px;
+}
+.whatsapp {
+  border-top: solid 2px #8FCB5D;
+  border-bottom: solid 2px #8FCB5D;
+  font-size: 32px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+img.imgwhatsapp {
+  padding-right: 20px;
+  width: 65px;
+  padding-bottom: 10px;
+}
+.shared {
+  margin-top: 40px;
+}
+/*--------Privacy--------*/
+.pprivacy{
+  background-color: #5716A3;
+}
+.lprivacy{
+  padding-top: 144px;
+  text-align: end;
+}
+.pritittle{
+  padding-top: 12px;
+  font-size: 9px;
+}
+.logtittle{
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 9px;
+  padding-right: 85px;
+}
+img.logop {
+    width: 40%;
+    padding-bottom: 20px;
+}
 
 /*----------------------------Queries-------------------------------*/
 

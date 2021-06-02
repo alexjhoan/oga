@@ -1,0 +1,53 @@
+<div class="container-fluid project3">
+  <div class="row">
+    <div class="col-5 cproject3">
+      <h3>Envianos tu consulta ahora</h3>
+      <form id="contactForm" novalidate>
+        <div class="form-floating">
+          <input type="text" class="form-control" placeholder="Nombre" name="name" required>
+          <label for="name">Nombre*</label>
+        </div>
+        <div class="form-floating">
+          <input type="email" class="form-control" placeholder="Email" name="email" required>
+          <label for="email">Email*</label>
+        </div>
+        <div class="form-floating">
+          <input type="tel" class="form-control" placeholder="Telefono" name="phone" required>
+          <label for="name">Telefono*</label>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" name="consult" style="height: 110px" placeholder="Consulta" required></textarea>
+          <label for="consult">Consulta*</label>
+        </div>
+        <button class="btn btn-primary mt-3 btnfbanner" type="submit" onclick="submited()">Enviar</button>
+      </form>
+      <div id="formSending" style="display: none;">
+        <p class="h3 strong">
+          Enviando
+          <span></span>
+          <span></span>
+          <span></span>
+        </p>
+      </div>
+      <div id="formSuccess" style="display: none;">
+        <p class="h3 strong">¡Consulta Enviada!</p>
+      </div>
+      <div id="formError" style="display: none;">
+        <p class="h3 strong">¡Error en el envio de su consulta.<br>Por favor intentar mas tarde!</p>
+      </div>
+    </div>
+    <div class="col-7 red">
+      <h3>¡Visitanos!</h3>
+      <h4 class="dtittle">Dirección -horario de atención</h4>
+      <a href="" class="whatsapp strong" target="_blank"><img src="assets/images/whatsapp.svg" alt="Ciudad jardin" class="imgwhatsapp" >+595 994 208038</a>
+      <div class="shared">
+        <a href="#" target="_blank" onclick='return false'>
+          <img src="assets/images/facebook.svg" class="facebook">
+        </a>
+        <a href="#" target="_blank" onclick='return false'>
+          <img src="assets/images/instagram.svg" class="instagram">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

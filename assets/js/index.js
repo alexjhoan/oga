@@ -18,3 +18,11 @@ $('.owl-carousel').owlCarousel({
     margin:0,
     nav:true,
 })
+
+$(document).ready(function() {
+  $('#header').load('components/header.html');
+  $('#contact').load('components/contact.html');
+  $('#sponsors').load('components/sponsors.html');
+  $('#precontact').load('components/precontact.html');
+  $('#footer').load('components/footer.html');
+});

@@ -398,11 +398,22 @@ img.imgwhatsapp {
   padding-right: 85px;
 }
 img.logop {
-    width: 40%;
-    padding-bottom: 20px;
+  width: 40%;
+  padding-bottom: 20px;
 }
 /*-----------------------------------------Project.html--------------------------------------------*/
-
+/*---------------The Project------------------*/
+.ptittle{
+  font-weight: 900;
+}
+.ptittle1{
+  font-size: 64px;
+  font-weight: 900;
+}
+.ptittle2{
+  color: #1A1A1A;
+  margin-bottom: 0;
+}
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}

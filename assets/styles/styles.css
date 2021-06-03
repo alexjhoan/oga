@@ -90,7 +90,7 @@ header {
 #banner .owl-dots {
   display: none;
 }
-.owl-nav button {
+#banner .owl-nav button {
   outline: none!important;
   border: 2px solid #fff!important;
   border-radius: 100%!important;
@@ -104,14 +104,14 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-.owl-nav button.owl-prev {
+#banner .owl-nav button.owl-prev {
   left: 15px;
 }
-.owl-nav button.owl-next {
+#banner .owl-nav button.owl-next {
   right: 15px;
 }
 
-button.owl-next span {
+#banner button.owl-next span {
   border-color: white;
   border-width: 2px 2px 0 0;
   border-style: solid;
@@ -122,7 +122,7 @@ button.owl-next span {
   display: block;
   font-size: 0;
 }
-button.owl-prev span {
+#banner button.owl-prev span {
   border-color: white;
   border-width: 0 0 2px 2px;
   border-style: solid;
@@ -133,10 +133,10 @@ button.owl-prev span {
   display: block;
   font-size: 0;
 }
-.owl-theme .owl-nav [class*=owl-]:hover {
+#banner .owl-theme .owl-nav [class*=owl-]:hover {
   background: 0 0 !important;
 }
-.owl-theme .owl-nav {
+#banner .owl-theme .owl-nav {
   margin-top: 0 !important;
 }
 /*---------------Pie Banner------------------*/

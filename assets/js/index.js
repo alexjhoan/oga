@@ -26,6 +26,13 @@ $('.owl-project').owlCarousel({
     nav:true,
 })
 
+$('.owl-zbanner').owlCarousel({
+    loop:true,
+    items:1,
+    margin:0,
+    nav:true,
+})
+
 $(document).ready(function() {
   $('#header').load('components/header.html');
   $('#contact').load('components/contact.html');

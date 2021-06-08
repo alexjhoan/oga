@@ -39,10 +39,10 @@ section {
 .btn.btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
-  border-radius: 0;
-  padding: 10px 40px;
-  color: #5716A3;
+  padding: 10px 40px !important;
+  color: #5716A3 !important;
   border-radius: 20px;
+  font-weight: 800;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
@@ -72,8 +72,7 @@ header {
   margin-left: auto;
   padding-right: 17px;
 }
-.navbar-expand-lg .navbar-collapse {
-  display: flex!important;
+.main {
   top: 0;
   bottom: 0;
   margin-bottom: auto;
@@ -152,7 +151,6 @@ header {
 
 .btnbanner{
   margin-top: 28px;
-  font-weight: 800;
 }
 /*---------------Finances------------------*/
 .ftittle{
@@ -668,19 +666,33 @@ img.aimages {
 }
 /*---------------Z-Banner------------------*/
 #zbanner {
-    margin-top: 165px;
+  margin-top: 165px;
 }
 #zbanner .owl-nav {
-    display: none;
+  display: none;
 }
 #zbanner .owl-dots {
-    margin-top: -40px;
-    position: absolute;
-    left: 0;
-    right: 0;
+  margin-top: -40px;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 #zbanner .owl-theme .owl-dots .owl-dot span {
-    background: #8fcb5d !important;
+  background: #8fcb5d !important;
+}
+/*---------------Unidades------------------*/
+section#unidades {
+  margin-top: 135px;
+}
+.col-12.unid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h2.atittle {
+  font-weight: 900;
+  width: 70vw;
+  font-size: 40px;
 }
 /*----------------------------Queries-------------------------------*/
 

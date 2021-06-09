@@ -85,15 +85,19 @@ header {
   bottom: 0;
 }
 ul.dropdown-menu.show {
-    background-color: rgba(117, 86, 192, 0.8);
-    border: none;
+  background-color: rgba(117, 86, 192, 0.8);
+  border: none;
 }
 ul.dropdown-menu.show a {
-    color: white;
+  color: white;
 }
 .dropdown-item:focus, .dropdown-item:hover {
-    width: fit-content;
-    background-color: rgba(117, 86, 192, 0.8);
+  width: fit-content;
+  background-color: rgba(117, 86, 192, 0.8);
+}
+hr.dropdown-divider {
+  color: #fffdfd !important;
+  height: 2px;
 }
 /*---------------Banner------------------*/
 #banner .owl-dots {
@@ -704,6 +708,82 @@ h2.atittle {
   width: 70vw;
   font-size: 40px;
 }
+#unidades .vgrid p {
+  color: black;
+  width: 70%;
+}
+#unidades .vgrid img {
+  width: 70%;
+}
+#unidades .vgrid .unidmin{
+  font-size: 11px;
+}
+#unidades .vgrid span {
+    font-size: 20px;
+}
+#unidades .vgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 17px;
+  margin-top: 112px;
+}
+#unidades .vgrid .item1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#unidades .vgrid .item2{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#unidades .vgrid .item4{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#unidades .vgrid .item6{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#unidades .vgrid .item7{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#unidades .vgrid .item9{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#unidades .vgrid .item11{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#unidades .vgrid .item12{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#unidades .vgrid .item14{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
 /*----------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}
@@ -724,6 +804,18 @@ h2.atittle {
   .btn.btn-primary {
     width: fit-content;
   }
+  /*li:not(:last-child) a:before {
+    content: '';
+    position: absolute;
+    background: #f9fafb;
+    width: calc(100% - 6px);
+    height: 1px;
+    left: 17px;
+    bottom: 0;
+  }
+  .navbar-collapse li:not(:last-child) a {
+    position: relative;
+  }*/
 
 }
 

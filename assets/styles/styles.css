@@ -155,7 +155,8 @@ hr.dropdown-divider {
 /*---------------Pie Banner------------------*/
 #piebanner {
   background-color: #8FCB5D;
-  height: 28vh;
+  padding-top: 14px;
+  padding-bottom: 12px;
   z-index: 2;
 }
 .pbtittle {
@@ -166,17 +167,23 @@ hr.dropdown-divider {
 .btnbanner{
   margin-top: 28px;
 }
+.cpiebn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 /*---------------Finances------------------*/
 .ftittle{
   margin-top: 47px;
   margin-bottom: 10px;
+  color: #5716a3;
 }
 .ftittle2{
   margin-bottom: 32px;
 }
 .fgrid {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 80%;
 }
 .fgrid .item1{
   grid-column-start: 1;
@@ -234,7 +241,7 @@ hr.dropdown-divider {
 }
 #finance .fibanner {
   position: absolute;
-  height: 675px;
+  height: 630px;
   right: 0;
   top: -48px;
   z-index: 1;
@@ -242,17 +249,13 @@ hr.dropdown-divider {
 /*---------------Finances Banner------------------*/
 #fbanner{
   background-color: #5716A3;
-  height: 126px;
   margin-top: 50px;
+  padding-bottom: 10px;
+  padding-top: 15px;
 }
 .fbtittle{
   color: #FFFFFF;
   font-weight: 900;
-  margin-top: 41px;
-}
-.btnfbanner {
-  margin-top: 41px;
-  font-weight: 800;
 }
  /*---------------Project------------------*/
  /*--------Project1--------*/
@@ -850,7 +853,14 @@ h2.atittle {
 
 @media (max-width: 1399.98px) {}
 
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+  .logtittle {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 9px;
+    padding-right: 50px;
+  }
+}
 
 @media (max-width: 991.98px) {
   .navbar-collapse {
@@ -878,7 +888,23 @@ h2.atittle {
   .navbar-collapse li:not(:last-child) a {
     position: relative;
   }*/
-
+  .red {
+    margin-top: 50px;
+  }
+  .privacy {
+    padding-top: 50px;
+  }
+  .lprivacy {
+    padding-top: 70px;
+  }
+  .logtittle {
+    padding-right: 28px;
+  }
+  .dtittle {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+  }
 }
 
 @media (max-width: 767.98px) {}

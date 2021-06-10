@@ -92,12 +92,20 @@ ul.dropdown-menu.show a {
   color: white;
 }
 .dropdown-item:focus, .dropdown-item:hover {
-  width: fit-content;
+  /*width: fit-content;*/
   background-color: rgba(117, 86, 192, 0.8);
 }
 hr.dropdown-divider {
   color: #fffdfd !important;
   height: 2px;
+  width: 85%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dropdown-menu li {
+  text-align: center;
 }
 /*---------------Banner------------------*/
 #banner .owl-dots {
@@ -316,10 +324,10 @@ hr.dropdown-divider {
   margin-top: 100px;
  }
  /*--------Contact--------*/
-.project3 {
+#contact {
   background-color: #5716A3;
   position: relative;
-  padding-left: 132px;
+  /* padding-left: 132px; */
   padding-top: 10px;
 }
 .form-floating {
@@ -439,11 +447,13 @@ img.logop {
 }
 .tptittle{
   font-weight: 900;
+  color: #5716a3;
 }
 .tptittle1 {
   font-size: 54px;
   font-weight: 900;
   margin-bottom: 0;
+  color: #5716a3;
 }
 .tptittle2 {
   color: #1A1A1A;
@@ -591,10 +601,19 @@ img.aimages {
   padding-right: 30px;
   padding-bottom: 70px;
 }
+.ugrid p {
+  padding-left: 12px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.vgrid h1 {
+ color: #5716a3;
+}
 .ugrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 15px;
+  grid-column-gap: 13px;
   margin-top: 18px;
 }
 .ugrid .item1{
@@ -602,84 +621,129 @@ img.aimages {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item2{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item3{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item4{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 4;
   grid-row-end: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item5{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 5;
   grid-row-end: 6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item6{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.ugrid .ite7{
+.ugrid .item7{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item8{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item9{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 4;
   grid-row-end: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item10{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 5;
   grid-row-end: 6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item11{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item12{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item13{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .ugrid .item14{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 4;
   grid-row-end: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 /*---------------Z-Banner------------------*/
 #zbanner {
@@ -722,7 +786,19 @@ h2.atittle {
   font-size: 11px;
 }
 #unidades .vgrid span {
-    font-size: 20px;
+  font-size: 20px;
+}
+#unidades .vgrid .dividerLine {
+  border-bottom: solid 2px #8FCB5D;
+  margin: 10px 0;
+  width: 250px;
+}
+.vgrid .item1 img::before {
+  position: absolute;
+  content: "";
+  height: 127px;
+  width: 127px;
+  background-color: #5716A3;
 }
 #unidades .vgrid{
   display: grid;
@@ -735,6 +811,7 @@ h2.atittle {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+  position: relative;
 }
 #unidades .vgrid .item2{
   grid-column-start: 1;

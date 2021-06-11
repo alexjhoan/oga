@@ -461,9 +461,12 @@ img.logop {
   margin-top: 5px;
   width: 290px;
 }
+.tpgrid h5{
+  margin-bottom: 0;
+}
 .tpgrid{
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 1fr;
   grid-row-gap: 15px;
 }
 .tpgrid .item1{
@@ -472,83 +475,49 @@ img.logop {
   grid-row-start: 1;
   grid-row-end: 2;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .tpgrid .item2{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .tpgrid .item3{
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  text-align: center;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .tpgrid .item4{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .tpgrid .item5{
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  text-align: center;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .tpgrid .item6{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-}
-.tpgrid .item7{
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  text-align: center;
-}
-.tpgrid .item8{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-}
-.tpgrid .item9{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  text-align: center;
-}
-.tpgrid .item10{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 6;
-  top: 0;
-  bottom: 0;
-  margin-top: auto;
-}
-.tpgrid .item11{
-  grid-column-start: 2;
-  grid-column-end: 3;
   grid-row-start: 6;
   grid-row-end: 7;
 }
@@ -793,12 +762,33 @@ h2.atittle {
   margin: 10px 0;
   width: 250px;
 }
-.vgrid .item1 img::before {
+.vgrid .wrap_image_project {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.vgrid .wrap_image_project:before {
   position: absolute;
   content: "";
   height: 127px;
   width: 127px;
   background-color: #5716A3;
+  z-index: -1;
+  border-radius: 100%;
+  top: -5px;
+  left: -5px;
+}
+.vgrid .wrap_image_project:after {
+  position: absolute;
+  content: "";
+  height: calc(100% + 10px);
+  width: 127px;
+  background-color: #8FCB5D;
+  top: 5px;
+  right: -15px;
+  z-index: -1;
+  border-radius: 25px;
 }
 #unidades .vgrid{
   display: grid;
@@ -806,62 +796,23 @@ h2.atittle {
   grid-column-gap: 17px;
   margin-top: 112px;
 }
-#unidades .vgrid .item1{
+#unidades .vgrid .itemproject1{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  position: relative;
 }
-#unidades .vgrid .item2{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-#unidades .vgrid .item4{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-#unidades .vgrid .item6{
+#unidades .vgrid .itemproject2{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
-#unidades .vgrid .item7{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-#unidades .vgrid .item9{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-#unidades .vgrid .item11{
+#unidades .vgrid .itemproject3{
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-}
-#unidades .vgrid .item12{
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-#unidades .vgrid .item14{
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
 }
 /*---------------Storage------------------*/
 #storage {

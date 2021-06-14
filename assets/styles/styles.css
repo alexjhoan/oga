@@ -330,9 +330,9 @@ hr.dropdown-divider {
   /* padding-left: 132px; */
   padding-top: 10px;
 }
-.form-floating {
+/*.form-floating {
   width: 486px;
-}
+}*/
 #contactForm label {
   color: #494846;
 }
@@ -741,6 +741,42 @@ h2.atittle {
   margin-top: 44px;
   text-align: center;
 }
+/*-----------------------------------------theowner.html--------------------------------------------*/
+/*---------------Finance------------------*/
+#main_finance{
+  background-color: #56209F;
+  height: fit-content;
+  padding-top: 165px;
+  padding-bottom: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main_finance .tittlemf{
+  font-size: 30px;
+  color: #FFFFFF;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+#main_finance .tittlemfI{
+  font-size: 47px;
+  color: #5716A3;
+  width: 50vw;
+  padding-left: 110px;
+  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-right: 64px;
+  font-weight: 900;
+}
+#main_finance .borderb{
+  background-color: #8FCB5D;
+  width: fit-content;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+#ftheproject{
+  margin-top: 90px;
+}
 
 /*----------------------------Queries-------------------------------*/
 
@@ -797,6 +833,9 @@ h2.atittle {
     margin-top: 50px;
     margin-bottom: 50px;
     color: white;
+  }
+  #main_finance .tittlemfI {
+    width: 90vw;
   }
 }
 

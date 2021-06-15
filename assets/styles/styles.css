@@ -882,6 +882,27 @@ h2.atittle {
 #login .login{
   margin-top: 166px;
 }
+#login .form-floating {
+  margin-bottom: 10px;
+}
+#login .tab {
+  position: absolute;
+  background-color: #8FCB5D;
+  height: fit-content;
+  border-radius: 35px;
+  width: fit-content;
+  padding-bottom: 23px;
+  padding-top: 19px;
+  padding-left: 77px;
+  padding-right: 39px;
+  left: 45vw;
+  z-index: -10;
+}
+.tab h5 {
+    color: #1A1A1A;
+    font-size: 20px;
+    font-weight: 600;
+}
 --------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}

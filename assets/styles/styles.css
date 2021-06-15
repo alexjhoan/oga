@@ -866,6 +866,22 @@ h2.atittle {
   text-align: center;
   margin-bottom: 36px;
 }
+#know .wrap_video{
+  padding-top:  56.25%;
+  position: relative;
+}
+#know .wrap_video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+/*-----------------------------------------theowner.html--------------------------------------------*/
+/*---------------group------------------*/
+#login .login{
+  margin-top: 166px;
+}
 --------------------------Queries-------------------------------*/
 
 @media (max-width: 1399.98px) {}
@@ -905,7 +921,7 @@ h2.atittle {
   .navbar-collapse li:not(:last-child) a {
     position: relative;
   }*/
-  .red {
+   .red {
     margin-top: 50px;
   }
   .privacy {
@@ -922,12 +938,145 @@ h2.atittle {
     margin-bottom: 50px;
     color: white;
   }
+
+  #unidades .vgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .storage {
+    height: fit-content;
+    width: fit-content;
+    grid-template-columns: 40% 10% 40%;
+    align-items: center;
+    justify-content: center;
+  }
+  .storage .item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .storage .item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .storage .item3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .storage .item4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #main_finance .tittlemfI {
     width: 90vw;
   }
   #group .contaupgrid .fond {
     width: 45vw;
     height: 25vh;
+  }
+  .info_project {
+    margin-bottom: 50px;
+  }
+  #storage {
+    margin-top: 50px;
+  }
+  .wrap_image_project img {
+    width: 70%;
+  }
+  .vgrid .wrap_image_project:before {
+    height: 100px;
+    width: 100px;
+    left: 50px;
+  }
+  .vgrid .wrap_image_project:after {
+    height: calc(100% + 10px);
+    width: 110px;
+    right: 45px;
+  }
+  section#unidades {
+    margin-top: 100px;
+  }
+  #unidades .vgrid .dividerLine {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   #unidades .vgrid .itemproject1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+  }
+  #unidades .vgrid .itemproject2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+  }
+  #unidades .vgrid .itemproject3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+  }
+  .tpgrid {
+    margin-top: 30px;
+  }
+  #theproject .project_m{
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #theproject .project_m h1, h5{
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tpgrid .itemtheproject1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tpgrid .itemtheproject1 .part {
+    display: block;
+    padding-bottom: 5vh;
+  }
+  .tpgrid .itemtheproject2 {
+    margin-top: 20px;
+  }
+  #zbanner {
+    margin-top: 100px;
   }
 }
 

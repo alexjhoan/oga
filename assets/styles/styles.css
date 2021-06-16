@@ -62,6 +62,9 @@ header {
   left: 0px;
   background: rgba(87, 22, 163, .8);
 }
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0;
+}
 .nav-link {
   text-align: left;
   font-weight: 500;
@@ -992,7 +995,7 @@ h2.atittle {
       background: rgba(117, 86, 192, 0.8);;
       position: fixed;
       left: 0;
-      top: 65px;
+      top: 57px;
   }
   .navbar-collapse .navbar-nav .nav-item a {
     margin-left: 20px;
@@ -1004,13 +1007,13 @@ h2.atittle {
     width: 60px;
   }
   #pbanner {
-    margin-top: 65px;
+    margin-top: 57px;
   }
   #banner {
-    margin-top: 65px;
+    margin-top: 57px;
   }
   section#main_backboard {
-    margin-top: 65px;
+    margin-top: 57px;
   }
   .btn.btn-primary {
     width: fit-content;

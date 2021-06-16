@@ -7,7 +7,7 @@
   --text-secondary: #FFFDFD;
   --text-hover: #191920;
   --btn: #F8B600;
-  --btn-hover: #F8B600;
+  --btn-hover: #F8B600;  
   font-size: 16px;
 }
 
@@ -729,6 +729,7 @@ h2.atittle {
   width: 0px;
   height: 66px;
   border: 2px solid #8FCB5D;
+  background: #8FCB5D;
 
 }
 .storage .item4{
@@ -879,31 +880,80 @@ h2.atittle {
 }
 /*-----------------------------------------theowner.html--------------------------------------------*/
 /*---------------group------------------*/
-#login .login{
-  margin-top: 166px;
-}
 #login .form-floating {
   margin-bottom: 10px;
 }
+#login .banner img {
+  width: 100%;
+}
+.wrap_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #login .tab {
-  position: absolute;
   background-color: #8FCB5D;
-  height: fit-content;
-  border-radius: 35px;
+  height: 70px;
+  line-height: 70px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
   width: fit-content;
-  padding-bottom: 23px;
-  padding-top: 19px;
-  padding-left: 77px;
-  padding-right: 39px;
-  left: 45vw;
-  z-index: -10;
+  padding: 0 30px 0 25px;
+  color: #1A1A1A;
+  transform: translateX(-12px);
+  margin-bottom: 30px;
 }
-.tab h5 {
-    color: #1A1A1A;
-    font-size: 20px;
-    font-weight: 600;
+#login h5.text_inicio {
+  color: #1A1A1A;
+  width: 240px;
+  max-width: 100%;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
---------------------------Queries-------------------------------*/
+#login .tptittle {
+  position: relative;
+}
+
+#login .tptittle .tree {
+  position: absolute;
+  left: -60px;
+  width: 45px;
+}
+#login input.form-control {
+  width: 400px;
+  max-width: 100%;
+  border-color: #707070;
+  border-radius: 0;
+}
+/*--------------------------Queries-------------------------------*/
+@media (min-width: 576px) {
+   
+}
+
+@media (min-width: 992px) {
+  #login .banner {
+    background-image: url(https://via.placeholder.com/767x900?text=Banner);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  #login .banner img {
+    display: none;
+  }
+  #login .inner_login {
+    padding-left: 70px;
+  }
+  #login .login {
+    padding-top: 95px;
+  }
+  #login .tab {
+    font-size: 1rem;
+    white-space: nowrap;
+  }  
+}
+
 
 @media (max-width: 1399.98px) {}
 
@@ -1098,6 +1148,27 @@ h2.atittle {
   }
   #zbanner {
     margin-top: 100px;
+  }
+  #login .tab {
+    margin-left: 0;
+    margin-top: 30px;
+    height: auto;
+    text-align: left;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  } 
+  .inner_login {
+      padding-left: 45px;
+      padding-bottom: 30px;
+  }
+  #login .tptittle .tree {
+    width: 30px;
+    left: -45px;
+  }
+  #login h5.text_inicio {
+      text-align: left;
+      margin-left: 0;
   }
 }
 

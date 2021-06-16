@@ -18,27 +18,29 @@
   <header id="header">
   </header>
   <section id="login">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-6 col-12">
-          <img src="assets/images/edif.jpg" alt="Ciudad jardin">
+        <div class="col-lg-6 col-12 px-0 banner">
+          <img src="https://via.placeholder.com/767x900?text=Banner" alt="Ciudad jardin" class="img-fluid">
         </div>
-        <div class="col-lg-6 col-12">
+        <div class="col-lg-6 col-12 wrap_login">
           <div class="login">
             <h5 class="tab">¡Espacio exclusivo para los que ya son dueños en Oga!</h5>
-            <h1 class="tptittle"><img src="assets/images/Group_218.svg" alt="Ciudad jardin" class="tpimages">¡Hola!</h1>
-            <h5 class="text_inicio">Inicia sesión para ver el avance del proyecto y de tu unidad.</h5>
-            <form id="contactForm" novalidate>
-              <div class="form-floating">
-                <input type="text" class="form-control" placeholder="Nombre" name="name" required>
-                <label for="name">Nombre*</label>
-              </div>
-              <div class="form-floating">
-                <input type="password" class="form-control" placeholder="password" name="contraseña" required>
-                <label for="email">Contraseña*</label>
-              </div>
-              <button class="btn btn-primary mt-3 btnfbanner" type="submit" onclick="submited()">Iniciar sesión</button>
-            </form>
+            <div class="inner_login">
+              <h1 class="tptittle"><img src="assets/images/Group_218.svg" alt="Ciudad jardin" class="tree">¡Hola!</h1>
+              <h5 class="text_inicio">Inicia sesión para ver el avance del proyecto y de tu unidad.</h5>
+              <form id="contactForm" novalidate>
+                <div class="form-floating">
+                  <input type="text" class="form-control" placeholder="Nombre" name="name" required>
+                  <label for="name">Nombre*</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" placeholder="password" name="contraseña" required>
+                  <label for="email">Contraseña*</label>
+                </div>
+                <button class="btn btn-primary mt-2 btnfbanner" type="submit" onclick="submited()">Iniciar sesión</button>
+              </form>
+            </div>            
           </div>
         </div>
       </div>
@@ -46,49 +48,7 @@
   </section>
 
 
-  <section id="theproject">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="ubication">
-    <div class="container">
-      <div class="row">
-        <div class="col-5">
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="amenities">
-    <div class="container">
-      <div class="row">
-        <div class="col-6">
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-   <section id="unidades">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 unid">
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="sponsors"></section>
-  <section id="precontact"></section>
-  <section id="contact"></section>
-  <footer id="footer"></footer>
+  
 <script type="text/javascript" src="assets/lib/jquery.min.js"></script>
 <script type="text/javascript" src="assets/lib/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="assets/lib/OwlCarousel/owl.carousel.min.js"></script>

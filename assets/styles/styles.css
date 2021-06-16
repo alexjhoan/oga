@@ -16,14 +16,14 @@ p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   color: var(--text);
 }
 
-a{
+/*a{
   font-family: Roboto;
   color: var(--text-secondary);
-}
+}*/
 a:hover {
     color: #f1f1f1;
 }
-p,div,input,button,textarea{
+a,p,div,input,button,textarea{
   font-family: Roboto;
   color: var(--text-secondary);
 }
@@ -39,10 +39,10 @@ section {
 .btn.btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
-  padding: 10px 40px !important;
+  padding: 6px 40px !important;
   color: #5716A3 !important;
   border-radius: 20px;
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
@@ -55,6 +55,7 @@ section {
 /*---------------Header------------------*/
 header {
   position: fixed;
+  height: 57px;
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -63,13 +64,19 @@ header {
 }
 .nav-link {
   text-align: left;
-  font: normal normal medium 16px/22px Poppins;
+  font-weight: 500;
   letter-spacing: 0px;
   color: #FFFDFD !important;
 }
 .navbar-nav {
   margin-left: auto;
   padding-right: 17px;
+}
+nav.navbar.navbar-expand-lg.navbar-light {
+    padding-top: 0;
+}
+div#navbarSupportedContent {
+    padding-bottom: 15px;
 }
 /*.main {
   top: 0;
@@ -973,20 +980,36 @@ h2.atittle {
 }
 
 @media (max-width: 991.98px) {
+  .btn.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: 6px 20px !important;
+    color: #5716A3 !important;
+    border-radius: 20px;
+    font-weight: 500;
+  }
   .navbar-collapse {
       background: rgba(117, 86, 192, 0.8);;
       position: fixed;
       left: 0;
-      top: 90px;
+      top: 65px;
   }
   .navbar-collapse .navbar-nav .nav-item a {
-    /* padding-left: 20px; */
     margin-left: 20px;
+  }
+  nav.navbar.navbar-expand-lg.navbar-light {
+    padding-top: .5rem;
   }
   .imgnavbar{
     width: 60px;
   }
-  section#banner {
+  #pbanner {
+    margin-top: 65px;
+  }
+  #banner {
+    margin-top: 65px;
+  }
+  section#main_backboard {
     margin-top: 65px;
   }
   .btn.btn-primary {

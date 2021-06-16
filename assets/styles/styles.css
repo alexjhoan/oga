@@ -7,7 +7,7 @@
   --text-secondary: #FFFDFD;
   --text-hover: #191920;
   --btn: #F8B600;
-  --btn-hover: #F8B600;  
+  --btn-hover: #F8B600;
   font-size: 16px;
 }
 
@@ -281,7 +281,7 @@ hr.dropdown-divider {
 }
 .pgrid{
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: repeat(5, 1fr);
   margin-top: 20px;
   grid-column-gap: 10px;
 }
@@ -501,24 +501,27 @@ img.tpimages {
   padding-top: 90px;
   margin-top: 64px;
 }
-.utittle{
+.utittle {
   font-weight: 900;
-  padding-bottom: 50px;
-}2
-.utittle1 {
-  font-size: 115px;
+
+  color: #5716A3;
+}
+h1.utittle1 {
+  color: #5716A3;
+  font-size: 113px;
   font-weight: 900;
   margin-bottom: 0;
 }
 .utittle2 {
   font-size: 57px;
   font-weight: 700;
-  font-weight: 700;
   margin-bottom: 0;
+  color: #5716A3;
 }
-.utittle3 {
+h5.utittle3 {
   color: #FFFFFF;
   padding-bottom: 151px;
+  text-align: start;
 }
 img.uimages {
   padding-right: 20px;
@@ -625,7 +628,9 @@ h2.atittle {
 #unidades .vgrid .dividerLine {
   border-bottom: solid 2px #8FCB5D;
   margin: 10px 0;
-  width: 250px;
+}
+.info_project {
+  padding-right: 45px;
 }
 .vgrid .wrap_image_project {
   position: relative;
@@ -928,10 +933,11 @@ h2.atittle {
 }
 /*--------------------------Queries-------------------------------*/
 @media (min-width: 576px) {
-   
+
 }
 
 @media (min-width: 992px) {
+
   #login .banner {
     background-image: url(https://via.placeholder.com/767x900?text=Banner);
     background-size: cover;
@@ -951,7 +957,7 @@ h2.atittle {
   #login .tab {
     font-size: 1rem;
     white-space: nowrap;
-  }  
+  }
 }
 
 
@@ -976,6 +982,12 @@ h2.atittle {
   .navbar-collapse .navbar-nav .nav-item a {
     /* padding-left: 20px; */
     margin-left: 20px;
+  }
+  .imgnavbar{
+    width: 60px;
+  }
+  section#banner {
+    margin-top: 65px;
   }
   .btn.btn-primary {
     width: fit-content;
@@ -1061,6 +1073,11 @@ h2.atittle {
     flex-direction: column;
     align-items: center;
   }
+  .fgrid .item4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   #main_finance .tittlemfI {
     width: 90vw;
   }
@@ -1117,6 +1134,10 @@ h2.atittle {
     grid-row-end: 4;
     text-align: center;
   }
+  .info_project {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
   .tpgrid {
     margin-top: 30px;
   }
@@ -1142,9 +1163,20 @@ h2.atittle {
   .tpgrid .itemtheproject1 .part {
     display: block;
     padding-bottom: 5vh;
+    width: 100%;
   }
   .tpgrid .itemtheproject2 {
     margin-top: 20px;
+    padding-left: 0;
+  }
+  .cpiebn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #fbanner {
+    text-align: center;
   }
   #zbanner {
     margin-top: 100px;
@@ -1157,7 +1189,7 @@ h2.atittle {
     line-height: 1.5;
     padding-top: 10px;
     padding-bottom: 10px;
-  } 
+  }
   .inner_login {
       padding-left: 45px;
       padding-bottom: 30px;

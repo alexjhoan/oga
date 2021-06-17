@@ -3,7 +3,7 @@
 :root{
   --primary: #F8B600;
   --secondary: #5716A3;
-  --text: #5716A3;
+  --text: #5716a3;
   --text-secondary: #FFFDFD;
   --text-hover: #191920;
   --btn: #F8B600;
@@ -14,6 +14,21 @@
 p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   font-family: Roboto;
   color: var(--text);
+}
+h1{
+  font-family: Roboto;
+  color: var(--text);
+  font-weight: 600;
+}
+.display-1, .display-2, .display-3, .display-4{
+  font-family: Roboto;
+  color: var(--text);
+  font-weight: 600;
+}
+.display-5{
+  font-family: Roboto;
+  color: var(--text-secondary);
+  font-weight: 600;
 }
 
 /*a{
@@ -49,6 +64,9 @@ section {
   background-color: var(--btn-hover)!important;
   border-color: var(--btn-hover)!important;
   box-shadow: 0px 3px 6px #00000029;;
+}
+display-1, display-3, display-4{
+    display: flex;
 }
 /*-----------------------------------------INDEX--------------------------------------------*/
 /*----------------------------Web-------------------------------*/
@@ -516,7 +534,7 @@ img.tpimages {
 
   color: #5716A3;
 }
-h1.utittle1 {
+.utittle1 {
   color: #5716A3;
   font-size: 113px;
   font-weight: 900;
@@ -557,9 +575,6 @@ img.aimages {
   padding-left: 12px;
   margin-bottom: 0;
   font-weight: 600;
-}
-.vgrid h1 {
-  color: #5716a3;
 }
 .ugrid {
   display: grid;
@@ -623,7 +638,18 @@ h2.atittle {
 }
 #unidades .vgrid p {
   color: black;
-
+}
+.textu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h5.texth5 {
+  padding-right: 10px;
+}
+h5.textsh5 {
+  padding-right: 20px;
+  color: #FFFFFF;
 }
 #unidades .vgrid img {
   border-radius: 25px;

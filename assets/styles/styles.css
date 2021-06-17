@@ -16,9 +16,10 @@ p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   color: var(--text);
 }
 h1{
-  font-family: Roboto;
-  color: var(--text);
   font-weight: 600;
+}
+h2{
+  font-weight: 900;
 }
 .display-1, .display-2, .display-3, .display-4{
   font-family: Roboto;
@@ -197,7 +198,6 @@ hr.dropdown-divider {
 }
 .pbtittle {
   margin-top: 14px;
-  font-weight: 900;
 }
 
 .btnbanner{
@@ -531,7 +531,6 @@ img.tpimages {
 }
 .utittle {
   font-weight: 900;
-
   color: #5716A3;
 }
 .utittle1 {
@@ -559,9 +558,6 @@ img.uimages {
 #amenities{
   margin-top: 71px;
 }
-#amenities .ugrid p{
-  color: #1A1A1A;
-}
 .amenities {
   display: flex;
   flex-direction: row;
@@ -571,10 +567,11 @@ img.aimages {
   padding-right: 30px;
   padding-bottom: 70px;
 }
-.ugrid p {
+.ugrid .textp {
   padding-left: 12px;
   margin-bottom: 0;
   font-weight: 600;
+  color: #1A1A1A;
 }
 .ugrid {
   display: grid;
@@ -740,9 +737,7 @@ h5.textsh5 {
 /*.storage .storimg{
   position: absolute;
 }*/
-.storage p, h1{
-  color: white;
-}
+
 .storage span {
     font-size: 20px;
     /* margin-right: 20px; */
@@ -846,14 +841,9 @@ h5.textsh5 {
   font-size: 55px;
   font-weight: 900;
 }
-#group .contaupgrid .num {
-  color: #396DB9;
-  font-weight: 900;
-}
 #group .contaupgrid .fond .text{
   color: #396DB9;
   font-weight: 900;
-  width: 36vw;
 }
 #group .contaupgrid .fond {
   background-color: #F5F5F5;

@@ -189,46 +189,45 @@ hr.dropdown-divider {
 #banner .owl-theme .owl-nav {
   margin-top: 0 !important;
 }
-/*---------------Pie Banner------------------*/
-#piebanner {
+/*---------------Green Banner------------------*/
+#green_banner {
   background-color: #8FCB5D;
   padding-top: 14px;
   padding-bottom: 12px;
   z-index: 2;
 }
-.pbtittle {
+#green_banner .secondary {
   margin-top: 14px;
 }
-
-.btnbanner{
-  margin-top: 28px;
-}
-.cpiebn {
+#green_banner .wrap_green {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+#green_banner .wrap_green .btn{
+  margin-top: 28px;
+}
 /*---------------Finances------------------*/
-.ftittle{
+#finance .primary{
   margin-top: 47px;
   margin-bottom: 10px;
   color: #5716a3;
 }
-.ftittle2{
+#finance .quintary{
   margin-bottom: 32px;
 }
-.fgrid {
+.grid_finance {
   display: grid;
   grid-template-columns: 15% 80%;
 }
-.fgrid .item1{
+.grid_finance .item1{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
   margin-bottom: 7.5px;
 }
-.fgrid .item2{
+.grid_finance .item2{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -237,7 +236,7 @@ hr.dropdown-divider {
   flex-direction: row;
   align-items: center;
 }
-.fgrid .item3{
+.grid_finance .item3{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
@@ -245,7 +244,7 @@ hr.dropdown-divider {
   margin-bottom: 7.5px;
   margin-top: 7.5px;
 }
-.fgrid .item4{
+.grid_finance .item4{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -255,7 +254,7 @@ hr.dropdown-divider {
   margin-bottom: auto;
   margin-top: auto;
 }
-.fgrid .item5{
+.grid_finance .item5{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
@@ -263,7 +262,7 @@ hr.dropdown-divider {
   margin-bottom: 7.5px;
   margin-top: 7.5px;
 }
-.fgrid .item6{
+.grid_finance .item6{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
@@ -272,10 +271,10 @@ hr.dropdown-divider {
   flex-direction: row;
   align-items: center;
 }
-.fgrid .item3 img {
+.grid_finance .item3 img {
   width: 60px;
 }
-#finance .fibanner {
+#finance .img_finance {
   position: absolute;
   height: 630px;
   right: 0;
@@ -283,13 +282,13 @@ hr.dropdown-divider {
   z-index: 1;
 }
 /*---------------Finances Banner------------------*/
-#fbanner{
+#border_banner{
   background-color: #5716A3;
   margin-top: 50px;
   padding-bottom: 10px;
   padding-top: 15px;
 }
-.fbtittle{
+#border_banner .primary{
   color: #FFFFFF;
   font-weight: 900;
 }
@@ -364,7 +363,7 @@ hr.dropdown-divider {
 #contactForm label {
   color: #494846;
 }
-.project3 h3 {
+.project3 .visit {
   margin-bottom: 36px;
   color: white;
 }
@@ -373,7 +372,7 @@ hr.dropdown-divider {
   margin-bottom: 100px;
   color: white;
 }
-.project3 h5 {
+.project3 .cptexth5 {
   color: white;
   margin-top: 28px;
   margin-bottom: 28px;
@@ -387,15 +386,15 @@ hr.dropdown-divider {
   border-radius: 0;
   height: 100px;
 }
-.project3 p.strong {
+.project3 .strong {
   color: white;
 }
-.project3 #formSending p.strong {
+.project3 #formSending .strong {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
-.project3 #formSending p.strong span {
+.project3 #formSending .strong span {
   background: #fff;
   height: 6px;
   width: 6px;
@@ -489,7 +488,7 @@ img.logop {
   margin-top: 5px;
   width: 290px;
 }
-.tpgrid h5{
+.tpgrid .tpgridh5{
   margin-bottom: 0;
 }
 .itemtheproject1 .part img {
@@ -545,7 +544,7 @@ img.tpimages {
   margin-bottom: 0;
   color: #5716A3;
 }
-h5.utittle3 {
+.utittle3 {
   color: #FFFFFF;
   padding-bottom: 151px;
   text-align: start;
@@ -816,7 +815,7 @@ h5.textsh5 {
 }
 
 /*-----------------------------------------Backboard.html--------------------------------------------*/
-/*---------------group------------------*/
+/*---------------Aramar_group------------------*/
 
 #main_backboard{
   background-image: url("../images/oficina.jpg");
@@ -824,28 +823,28 @@ h5.textsh5 {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-#group {
+#aramar_group {
   margin-top: 61px;
 }
-#group .titlegroup{
+#aramar_group .primary{
   color: #396DB9;
   font-size: 52px;
   margin-bottom: 25px;
 }
-#group .textgroup{
+#aramar_group .quintary{
   color: #1A1A1A;
   font-size: 14px;
 }
-#group .contaupgrid .num {
+#aramar_group .grid_aramar .primary {
   color: #396DB9;
   font-size: 55px;
   font-weight: 900;
 }
-#group .contaupgrid .fond .text{
+#aramar_group .grid_aramar .back_gray .quintary{
   color: #396DB9;
   font-weight: 900;
 }
-#group .contaupgrid .fond {
+#aramar_group .grid_aramar .back_gray {
   background-color: #F5F5F5;
   width: 253px;
   height: 156px;
@@ -855,32 +854,32 @@ h5.textsh5 {
   align-items: center;
   justify-content: center;
 }
-#group .contaupgrid{
+#aramar_group .grid_aramar{
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
   grid-row-gap: 20px;
   grid-column-gap: 20px;
 }
-#group .contaupgrid .itemconta1{
+#aramar_group .grid_aramar .iteminfo1{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
 }
-#group .contaupgrid .itemconta2{
+#aramar_group .grid_aramar .iteminfo2{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
-#group .contaupgrid .itemconta3{
+#aramar_group .grid_aramar .iteminfo3{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 }
-#group .contaupgrid .itemconta4{
+#aramar_group .grid_aramar .iteminfo4{
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -891,7 +890,7 @@ h5.textsh5 {
   margin-top: 87px;
   text-align: center;
 }
-#know .tittleknow{
+#know .secondary{
   color: #396DB9;
   font-size: 35px;
   font-weight: 900;
@@ -1123,7 +1122,7 @@ h5.textsh5 {
   #main_finance .tittlemfI {
     width: 90vw;
   }
-  #group .contaupgrid .fond {
+  #group .contaupgrid .back_gray {
     width: 45vw;
     height: 25vh;
   }
@@ -1211,13 +1210,13 @@ h5.textsh5 {
     margin-top: 20px;
     padding-left: 0;
   }
-  .cpiebn {
+  #green_banner .wrap_green {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  #fbanner {
+  #border_banner {
     text-align: center;
   }
   #zbanner {

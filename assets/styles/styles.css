@@ -469,26 +469,26 @@ img.logop {
 #theproject {
     margin-top: 100px;
 }
-#theproject .tpgrid h5{
-  color: #1A1A1A;
-}
 .tptittle{
   font-weight: 900;
   color: #5716a3;
 }
-.tptittle1 {
+#theproject .project_m .primary {
   font-size: 54px;
   font-weight: 900;
   margin-bottom: 0;
   color: #5716a3;
 }
-.tptittle2 {
+#theproject .project_m .quintary {
   color: #1A1A1A;
   margin-bottom: 30px;
   margin-top: 5px;
   width: 290px;
 }
-.tpgrid .tpgridh5{
+#theproject .project_m .tpgrid .itemtheproject1 .quintary{
+  color: #1A1A1A;
+  margin-top: 5px;
+  width: 290px;
   margin-bottom: 0;
 }
 .itemtheproject1 .part img {
@@ -517,6 +517,7 @@ img.logop {
   grid-row-start: 2;
   grid-row-end: 3;
   padding-left: 6vw;
+  padding-top: 20px;
 }
 img.tpimages {
     padding-right: 20px;
@@ -528,23 +529,23 @@ img.tpimages {
   padding-top: 90px;
   margin-top: 64px;
 }
-.utittle {
+.tptittle {
   font-weight: 900;
   color: #5716A3;
 }
-.utittle1 {
+h1.display-1.primary {
   color: #5716A3;
   font-size: 113px;
   font-weight: 900;
   margin-bottom: 0;
 }
-.utittle2 {
+h1.display-4.primary {
   font-size: 57px;
   font-weight: 700;
   margin-bottom: 0;
   color: #5716A3;
 }
-.utittle3 {
+#ubication .ubication .quintary {
   color: #FFFFFF;
   padding-bottom: 151px;
   text-align: start;
@@ -566,7 +567,7 @@ img.aimages {
   padding-right: 30px;
   padding-bottom: 70px;
 }
-.ugrid .textp {
+#amenities .ugrid .text {
   padding-left: 12px;
   margin-bottom: 0;
   font-weight: 600;
@@ -627,7 +628,7 @@ section#unidades {
   flex-direction: row;
   align-items: center;
 }
-h2.atittle {
+#amenities .amenities .secondary {
   font-weight: 900;
   width: 70vw;
   font-size: 40px;
@@ -788,13 +789,13 @@ h5.textsh5 {
   flex-direction: column;
   justify-content: center;
 }
-#main_finance .tittlemf{
+#main_finance .tertiary{
   font-size: 30px;
   color: #FFFFFF;
   font-weight: 900;
   padding-bottom: 10px;
 }
-#main_finance .tittlemfI{
+#main_finance .borderb .primary{
   font-size: 47px;
   color: #5716A3;
   width: 50vw;
@@ -1119,7 +1120,7 @@ h5.textsh5 {
     flex-direction: column;
     align-items: center;
   }
-  #main_finance .tittlemfI {
+  #main_finance .borderb .primary {
     width: 90vw;
   }
   #group .contaupgrid .back_gray {

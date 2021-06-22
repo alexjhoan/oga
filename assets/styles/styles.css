@@ -317,8 +317,7 @@ hr.dropdown-divider {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  column-gap: 40px;
-  margin-top: 21px;    
+  margin-top: 21px;
 }
 
 /*.pgrid{
@@ -427,14 +426,19 @@ img.facebook {
   padding-left: 133px;
   padding-right: 122px;
 }
+.red .primary {
+  color: white;
+  font-weight: 500;
+}
 .whatsapp {
   border-top: solid 2px #8FCB5D;
   border-bottom: solid 2px #8FCB5D;
-  font-size: 32px;
+  /* font-size: 32px; */
   padding-bottom: 15px;
   padding-top: 15px;
   text-decoration: none;
-  font-weight: 500;
+  display: flex;
+  width: fit-content;
 }
 img.imgwhatsapp {
   padding-right: 20px;
@@ -657,10 +661,10 @@ section#unidades {
   flex-direction: row;
   align-items: center;
 }
-h5.texth5 {
+.textu .quintary {
   padding-right: 10px;
 }
-h5.textsh5 {
+.storage .quintary {
   padding-right: 20px;
   color: #FFFFFF;
 }
@@ -668,7 +672,7 @@ h5.textsh5 {
   border-radius: 25px;
   box-shadow: 0 0 15px rgb(0 0 0 / 30%);
 }
-#unidades .vgrid .unidmin{
+#unidades .vgrid .text{
   font-size: 11px;
 }
 #unidades .vgrid span {
@@ -758,7 +762,7 @@ h5.textsh5 {
     font-size: 20px;
     /* margin-right: 20px; */
 }
-.storage h5 {
+.storage .quintary {
     margin-bottom: 0;
 }
 .storage .item1{
@@ -840,8 +844,9 @@ h5.textsh5 {
 }
 #aramar_group .primary{
   color: #396DB9;
-  font-size: 52px;
-  margin-bottom: 25px;
+}
+#aramar_group .text{
+  color: #396DB9;
 }
 #aramar_group .quintary{
   color: #1A1A1A;
@@ -1010,10 +1015,10 @@ h5.textsh5 {
   }
   #main_finance .borderb:before {
     width: 55%;
-  }  
+  }
 }
 
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) {
   #main_finance .borderb:before {
     width: 50%;
   }
@@ -1060,6 +1065,20 @@ h5.textsh5 {
   }
   #banner {
     margin-top: 57px;
+  }
+  .ugrid {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .ugrid .part {
+    display: block;
+    /* flex-direction: row; */
+    /* align-items: center; */
+    margin-bottom: 3vh;
+  }
+  #amenities .ugrid .text {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   section#main_backboard {
     margin-top: 57px;
@@ -1155,7 +1174,7 @@ h5.textsh5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }  
+  }
   #group .contaupgrid .back_gray {
     width: 45vw;
     height: 25vh;
@@ -1180,7 +1199,8 @@ h5.textsh5 {
     right: 45px;
   }
   section#unidades {
-    margin-top: 100px;
+    margin-top: 80px;
+    padding-top: 0;
   }
   #unidades .vgrid .dividerLine {
     left: 0;
@@ -1223,7 +1243,14 @@ h5.textsh5 {
     margin-left: auto;
     margin-right: auto;
   }
-  #theproject .project_m h1, h5{
+  #theproject .project_m .primary{
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #theproject .project_m .quintary{
     text-align: center;
     left: 0;
     right: 0;
@@ -1279,7 +1306,14 @@ h5.textsh5 {
   }
 }
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+  h1.display-1.primary {
+    color: #5716A3;
+    font-size: 90px;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+}
 
 @media (max-width: 575.98px) {
   #main_finance .borderb {
@@ -1287,5 +1321,66 @@ h5.textsh5 {
     background-color: #8FCB5D;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
+  }
+  .ugrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1vw;
+    margin-top: 18px;
+  }
+  #amenities .ugrid .text {
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  .ugrid .itemamenities2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .ugrid .itemamenities3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  #zbanner {
+    margin-top: 30px;
+  }
+  section#unidades {
+    margin-top: 80px;
+    padding-top: 0;
+  }
+  .storage h5 {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .textu {
+    display: block;
+  }
+  .storage .item2 {
+    margin: 10px 30px;
+  }
+  .storage .item4 {
+    padding: 10px 30px;
+  }
+  .storage .quintary {
+  padding-right: 0;
+  color: #FFFFFF;
+  }
+  #aramar_group .grid_aramar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* right: 0; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
   }
 }

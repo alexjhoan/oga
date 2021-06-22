@@ -811,7 +811,6 @@ h5.textsh5 {
   padding-bottom: 10px;
 }
 #main_finance .borderb .primary{
-  font-size: 47px;
   color: #5716A3;
   width: 50vw;
   padding-left: 110px;
@@ -1142,7 +1141,8 @@ h5.textsh5 {
     align-items: center;
   }
   #main_finance .borderb .primary {
-    width: 90vw;
+    width: 95%;
+    padding: 15px 35px 15px 15px;
   }
   #group .contaupgrid .back_gray {
     width: 45vw;

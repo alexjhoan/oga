@@ -1141,6 +1141,10 @@ h5.textsh5 {
     align-items: center;
   }
   #main_finance .borderb .primary {
+    width: 100%;
+    padding: 0;
+  }
+  #main_finance .borderb{
     width: 95%;
     padding: 15px 35px 15px 15px;
   }

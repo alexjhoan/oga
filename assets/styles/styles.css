@@ -315,11 +315,12 @@ hr.dropdown-divider {
 .pflex{
   display: flex;
   justify-content: space-around;
-  margin-top: 21px;
+  flex-wrap: wrap;
+  width: 100%;
+  column-gap: 40px;
+  margin-top: 21px;    
 }
-.pflex img{
-  margin-right: 40px;
-}
+
 /*.pgrid{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -812,18 +813,14 @@ h5.textsh5 {
 }
 #main_finance .borderb .primary{
   color: #5716A3;
-  width: 50vw;
-  padding-left: 110px;
-  padding-bottom: 32px;
-  padding-top: 24px;
-  padding-right: 64px;
   font-weight: 900;
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  padding: 15px 0;
 }
 #main_finance .borderb{
-  background-color: #8FCB5D;
-  width: fit-content;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
+  position: relative;
 }
 #ftheproject{
   margin-top: 90px;
@@ -973,7 +970,17 @@ h5.textsh5 {
 }
 /*--------------------------Queries-------------------------------*/
 @media (min-width: 576px) {
-
+  #main_finance .borderb:before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 0;
+    background-color: #8FCB5D;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    z-index: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1000,6 +1007,15 @@ h5.textsh5 {
   }
   .mobile{
     display: none;
+  }
+  #main_finance .borderb:before {
+    width: 55%;
+  }  
+}
+
+@media (min-width: 1200px) { 
+  #main_finance .borderb:before {
+    width: 50%;
   }
 }
 
@@ -1139,15 +1155,7 @@ h5.textsh5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  #main_finance .borderb .primary {
-    width: 100%;
-    padding: 0;
-  }
-  #main_finance .borderb{
-    width: 95%;
-    padding: 15px 35px 15px 15px;
-  }
+  }  
   #group .contaupgrid .back_gray {
     width: 45vw;
     height: 25vh;
@@ -1273,4 +1281,11 @@ h5.textsh5 {
 
 @media (max-width: 767.98px) {}
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  #main_finance .borderb {
+    width: 95%;
+    background-color: #8FCB5D;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+}

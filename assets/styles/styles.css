@@ -58,8 +58,10 @@ section {
   padding: 6px 24px !important;
   color: #5716A3 !important;
   border-radius: 20px;
-  font-weight: 500;
+  font-weight: 700;
   box-shadow: 0px 3px 6px #00000029;
+  min-width: 200px;
+  height: 45px;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
@@ -84,18 +86,28 @@ header {
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0;
 }
+.navbar-nav li:last-child .nav-link{
+  padding-right: 0!important;
+}
+a.nav-link{
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
 .nav-link {
   text-align: left;
   font-weight: 500;
   letter-spacing: 0px;
   color: #FFFDFD !important;
 }
+a.nav-link.btn.btn-primary {
+    min-width: 100px;
+    height: 37px;
+}
 a.nav-link {
     padding-left: 1rem !important;
 }
 .navbar-nav {
   margin-left: auto;
-  padding-right: 17px;
 }
 nav.navbar.navbar-expand-lg.navbar-light {
     padding-top: 0;
@@ -208,12 +220,12 @@ hr.dropdown-divider {
   align-items: center;
 }
 /*---------------Finances------------------*/
-#finance .primary{
+#finance .inic_banner .primary{
   margin-top: 47px;
   margin-bottom: 10px;
   color: #5716a3;
 }
-#finance .quintary{
+#finance .inic_banner .quintary{
   margin-bottom: 32px;
 }
 .grid_finance {
@@ -280,6 +292,7 @@ hr.dropdown-divider {
   right: 0;
   top: -48px;
   z-index: 1;
+  bottom: 0;
 }
 /*---------------Finances Banner------------------*/
 #border_banner{
@@ -290,7 +303,7 @@ hr.dropdown-divider {
 }
 #border_banner .primary{
   color: #FFFFFF;
-  font-weight: 900;
+  font-weight: 900 !important;
 }
 #border_banner .wrap_btn {
     top: 0;
@@ -508,8 +521,9 @@ img.logop {
 #theproject .project_m .tpgrid .itemtheproject1 .quintary{
   color: #1A1A1A;
   margin-top: 5px;
-  width: 290px;
+  width: 300px;
   margin-bottom: 0;
+  max-width: 100%;
 }
 .itemtheproject1 .part img {
   padding-right: 2vw;
@@ -560,7 +574,6 @@ h1.display-1.primary {
   margin-bottom: 0;
 }
 h1.display-4.primary {
-  font-size: 57px;
   font-weight: 700;
   margin-bottom: 0;
   color: #5716A3;
@@ -586,7 +599,10 @@ img.uimages {
 }
 img.aimages {
   padding-right: 30px;
-  padding-bottom: 70px;
+  padding-bottom: 25px;
+}
+#unidades .unid .primary {
+  font-weight: 900;
 }
 #amenities .ugrid .text {
   padding-left: 12px;
@@ -649,10 +665,8 @@ section#unidades {
   flex-direction: row;
   align-items: center;
 }
-#amenities .amenities .secondary {
+#amenities .amenities .parimary {
   font-weight: 900;
-  width: 70vw;
-  font-size: 40px;
 }
 #unidades .vgrid p {
   color: black;
@@ -665,7 +679,7 @@ section#unidades {
 .textu .quintary {
   padding-right: 10px;
 }
-.storage .quintary {
+.storage .textu .quintary {
   padding-right: 20px;
   color: #FFFFFF;
 }
@@ -763,7 +777,7 @@ section#unidades {
     font-size: 20px;
     /* margin-right: 20px; */
 }
-.storage .quintary {
+.storage .textu .quintary {
     margin-bottom: 0;
 }
 .storage .item1{
@@ -843,8 +857,9 @@ section#unidades {
 #aramar_group {
   margin-top: 61px;
 }
-#aramar_group .primary{
+#aramar_group .display-4{
   color: #396DB9;
+  font-weight: 900 !important;
 }
 #aramar_group .text{
   color: #396DB9;
@@ -1034,6 +1049,10 @@ section#unidades {
     margin-bottom: 0;
     font-size: 9px;
     padding-right: 50px;
+  }
+   #login .tab {
+    font-size: 1rem;
+    white-space: nowrap;
   }
 }
 
@@ -1233,6 +1252,7 @@ section#unidades {
   .info_project {
     padding-right: 45px;
     padding-left: 45px;
+    text-align: left;
   }
   .tpgrid {
     margin-top: 30px;
@@ -1278,7 +1298,7 @@ section#unidades {
     align-items: center;
     justify-content: center;
   }
-  #border_banner {
+  .border_banner {
     text-align: center;
   }
   #zbanner {
@@ -1317,6 +1337,20 @@ section#unidades {
 }
 
 @media (max-width: 575.98px) {
+  .grid_finance .item2{
+    padding-left: 15px;
+  }
+
+  .grid_finance .item4{
+    padding-left: 15px;
+  }
+
+  .grid_finance .item6{
+    padding-left: 15px;
+  }
+  #theproject {
+    margin-top: 45px;
+  }
   #main_finance .borderb {
     width: 95%;
     background-color: #8FCB5D;
@@ -1324,27 +1358,25 @@ section#unidades {
     border-bottom-right-radius: 100px;
   }
   .ugrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 18px;
+  }
+  .ugrid .part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3vh;
+   }
+   .ugrid .itemamenities3 {
+    width: 60%;
   }
   #amenities .ugrid .text {
     padding-top: 5px;
     padding-bottom: 10px;
   }
-  .ugrid .itemamenities2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .ugrid .itemamenities3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
+
   #zbanner {
     margin-top: 30px;
   }
@@ -1360,18 +1392,18 @@ section#unidades {
     margin-left: 0;
     margin-right: 0;
   }
-  .textu {
-    display: block;
-  }
   .storage .item2 {
     margin: 10px 30px;
   }
   .storage .item4 {
     padding: 10px 30px;
   }
-  .storage .quintary {
+  .storage .textu .quintary {
   padding-right: 0;
   color: #FFFFFF;
+  }
+  #storage .storage .textu {
+    display: block;
   }
   #aramar_group .grid_aramar {
     display: flex;
@@ -1384,4 +1416,5 @@ section#unidades {
     /* margin-left: auto; */
     /* margin-right: auto; */
   }
+
 }

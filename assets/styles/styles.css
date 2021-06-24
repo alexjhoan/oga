@@ -1595,6 +1595,22 @@ section#mask_group {
       text-align: left;
       margin-left: 0;
   }
+  #mask_group .grid_mask {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  #mask_group .number {
+    justify-content: center;
+  }
+  .header_mask {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1604,6 +1620,7 @@ section#mask_group {
     font-weight: 900;
     margin-bottom: 0;
   }
+
 }
 
 @media (max-width: 575.98px) {

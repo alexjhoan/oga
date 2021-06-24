@@ -58,7 +58,7 @@ section {
   padding: 6px 24px !important;
   color: #5716A3 !important;
   border-radius: 20px;
-  font-weight: 700;
+  font-weight: 700 !important;
   box-shadow: 0px 3px 6px #00000029;
   min-width: 200px;
   height: 45px;
@@ -1139,10 +1139,7 @@ section#mask_group {
   #login .login {
     padding-top: 95px;
   }
-  #login .tab {
-    font-size: 1rem;
-    white-space: nowrap;
-  }
+
   .mobile{
     display: none;
   }
@@ -1582,6 +1579,10 @@ section#mask_group {
     line-height: 1.5;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  #login .tab {
+    font-size: 1rem;
+    white-space: nowrap;
   }
   .inner_login {
       padding-left: 45px;

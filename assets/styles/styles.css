@@ -481,10 +481,7 @@ img.logop {
 #theproject {
     margin-top: 100px;
 }
-.tptittle{
-  font-weight: 900;
-  color: #5716a3;
-}
+
 #theproject .project_m .primary {
   font-size: 54px;
   font-weight: 900;
@@ -883,36 +880,98 @@ section#unidades {
 }
 /*-----------------------------------------theowner.html--------------------------------------------*/
 /*---------------Finance------------------*/
-#main_finance{
-  background-color: #56209F;
-  height: fit-content;
-  padding-top: 165px;
-  padding-bottom: 110px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#main_finance .tertiary{
-  font-size: 30px;
-  color: #FFFFFF;
-  font-weight: 900;
-  padding-bottom: 10px;
-}
-#main_finance .borderb .primary{
-  color: #5716A3;
-  font-weight: 900;
-  z-index: 1;
-  position: relative;
-  margin: 0;
-  padding: 15px 0;
-}
-#main_finance .borderb{
-  position: relative;
-}
+
 #ftheproject{
   margin-top: 90px;
 }
+#ftheproject .primary {
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+#ftheproject .three{
+  background-color: #8FCB5D;
+  height: 86px;
+  width: 521px;
+  border-radius: 29px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#ftheproject .quintary {
+  color: black;
+}
+#ftheproject .text {
+  margin-top: 10px;
+  color: black;
+  font-size: 14px;
+}
+.wrap_img {
+    margin-top: 44px;
+}
+.wrap_img img {
+    margin-right: 25px;
+}
+/*---------------Mask_group------------------*/
 
+section#mask_group {
+  background-color: #5716A3;
+  margin-top: 145px;
+}
+#mask_group .grid_mask{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 150px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+#mask_group .grid_mask .item_mask1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+#mask_group .grid_mask .item_mask2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+#mask_group .grid_mask .item_mask3{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start:1;
+  grid-row-end:2;
+}
+#mask_group .number{
+  background-color: #8CC85D;
+  height:91px;
+  width: 91px;
+  border-radius: 50px;
+}
+.header_mask {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#mask_group .number {
+    background-color: #8CC85D;
+    height: 91px;
+    width: 91px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+}
+.grid_mask .tertiary {
+    color: white;
+    margin-top: 28px;
+}
+.grid_mask .text {
+    font-size: 14px;
+    margin-top: 20px;
+}
 /*-----------------------------------------Backboard.html--------------------------------------------*/
 /*---------------Aramar_group------------------*/
 
@@ -1059,17 +1118,7 @@ section#unidades {
 }
 /*--------------------------Queries-------------------------------*/
 @media (min-width: 576px) {
-  #main_finance .borderb:before {
-    content: '';
-    position: absolute;
-    width: 70%;
-    height: 100%;
-    left: 0;
-    background-color: #8FCB5D;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    z-index: 0;
-  }
+
 }
 
 @media (min-width: 992px) {
@@ -1097,15 +1146,11 @@ section#unidades {
   .mobile{
     display: none;
   }
-  #main_finance .borderb:before {
-    width: 55%;
-  }
+
 }
 
 @media (min-width: 1200px) {
-  #main_finance .borderb:before {
-    width: 50%;
-  }
+
 }
 
 
@@ -1576,12 +1621,7 @@ section#unidades {
   #theproject {
     margin-top: 45px;
   }
-  #main_finance .borderb {
-    width: 95%;
-    background-color: #8FCB5D;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-  }
+
 
   #amenities .ugrid .text {
     padding-top: 5px;

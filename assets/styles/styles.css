@@ -55,13 +55,16 @@ section {
 .btn.btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
-  padding: 6px 24px !important;
+  /*padding: 6px 24px !important;*/
   color: #5716A3 !important;
-  border-radius: 20px;
+  border-radius: 29px;
   font-weight: 700 !important;
   box-shadow: 0px 3px 6px #00000029;
-  min-width: 200px;
+  width: fit-content;
+  min-width: 157px;
   height: 45px;
+  /* margin-bottom: 0; */
+  text-align: center;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
@@ -74,11 +77,11 @@ display-1, display-3, display-4{
 /*-----------------------------------------INDEX--------------------------------------------*/
 /*----------------------------Web-------------------------------*/
 /*---------------Header------------------*/
-.fancybox-lock {
+/*.fancybox-lock {
     overflow: visible !important;
     width: auto;
 }
-
+*/
 
 header {
   position: fixed;
@@ -165,6 +168,16 @@ hr.dropdown-divider {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
+}
+.text_b {
+    position: absolute;
+    z-index: 1;
+    margin-top: -400px;
+    left: 130px;
+}
+.item {
+    position: relative;
 }
 /*#banner .owl-dots {
   display: none;
@@ -261,10 +274,13 @@ hr.dropdown-divider {
 .rectangle .tertiary {
    text-align: center;
    margin-bottom: 0;
+   font-weight: 300;
+   font-size: 29px;
 }
 .grid_finance {
   display: grid;
-  grid-template-columns: 15% 80%;
+  grid-template-columns: 1fr;
+  grid-row-gap: 10px;
 }
 .grid_finance .item1{
   grid-column-start: 1;
@@ -272,12 +288,19 @@ hr.dropdown-divider {
   grid-row-start: 1;
   grid-row-end: 2;
   margin-bottom: 7.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
 }
+
 .grid_finance .item2{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-bottom: 7.5px;
+  margin-top: 7.5px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -285,40 +308,24 @@ hr.dropdown-divider {
 .grid_finance .item3{
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin-bottom: 7.5px;
-  margin-top: 7.5px;
-}
-.grid_finance .item4{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  top: 0;
-  right: 0;
-  margin-bottom: auto;
-  margin-top: auto;
-}
-.grid_finance .item5{
-  grid-column-start: 1;
-  grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
   margin-bottom: 7.5px;
   margin-top: 7.5px;
-}
-.grid_finance .item6{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
+.grid_finance .item1 img {
+    margin-right: 11px;
+}
+.grid_finance .item2 img {
+    width: 60px;
+    margin-right: 11px;
+}
 .grid_finance .item3 img {
-  width: 60px;
+    margin-right: 11px;
 }
 #finance .img_finance {
   position: absolute;
@@ -349,7 +356,8 @@ hr.dropdown-divider {
 .project1{
   height: 130px;
 }
-.ptittle{
+#sponsors .ptittle {
+  font-weight: 900;
   margin-top: 78px;
   text-align: center;
 }
@@ -491,6 +499,14 @@ img.logop {
 }
 .owl-theme .owl-dots .owl-dot span {
     background: #8fcb5d !important;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #DFFAC8 !important;
+}
+
+button:focus {
+    outline: none;
+    /* outline: -webkit-focus-ring-color auto 5px; */
 }
 /*---------------The Project------------------*/
 #theproject {
@@ -768,6 +784,21 @@ section#unidades {
   z-index: -1;
   border-radius: 25px;
 }*/
+img.search {
+  width: 20px;
+  margin-bottom: 0;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+}
+.info_project {
+    padding-right: 45px;
+    margin-top: 12px;
+}
 #unidades .vgrid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -811,6 +842,9 @@ section#unidades {
   margin-bottom: 20px;
   padding-left: 20px;
   padding-top: 20px;
+}
+.pgrid .info_project .tertary {
+    font-weight: 500;
 }
 #unidades .pgrid{
   display: grid;

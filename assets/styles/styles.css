@@ -1020,6 +1020,7 @@ section#mask_group {
 }
 #mask_group .number {
     background-color: #8CC85D;
+    /*height: calc(45px + 4.5vw);*/
     height: 91px;
     width: 91px;
     border-radius: 100%;
@@ -1218,6 +1219,16 @@ section#mask_group {
 @media (max-width: 1399.98px) {}
 
 @media (max-width: 1199.98px) {
+  #mask_group .number {
+    background-color: #8CC85D;
+    height: calc(45px + 4.5vw);
+    width: calc(45px + 4.5vw);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+  }
   .logtittle {
     padding-bottom: 0;
     margin-bottom: 0;
@@ -1245,9 +1256,9 @@ section#mask_group {
     left: 0;
     top: 57px;
   }
-  .navbar-collapse .navbar-nav .nav-item a {
+  /*.navbar-collapse .navbar-nav .nav-item a {
     margin-left: 20px;
-  }
+  }*/
   nav.navbar.navbar-expand-lg.navbar-light {
     padding-top: .5rem;
   }
@@ -1668,8 +1679,8 @@ section#mask_group {
     white-space: nowrap;
   }
   .inner_login {
-      padding-left: 45px;
-      padding-bottom: 30px;
+    padding-left: 0;
+    padding-bottom: 30px;
   }
   #login .tptittle .tree {
     width: 30px;

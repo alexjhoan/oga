@@ -60,10 +60,7 @@ section {
   border-radius: 29px;
   font-weight: 700 !important;
   box-shadow: 0px 3px 6px #00000029 !important;
-  /*width: fit-content;
-  min-width: 157px;*/
-  height: 45px;
-  /* margin-bottom: 0; */
+  height:100%;
   text-align: center;
 }
 
@@ -110,8 +107,12 @@ a.nav-link {
   color: #FFFDFD !important;
 }
 a.nav-link.btn.btn-primary {
-    min-width: 100px;
-    height: 37px;
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar-nav {
@@ -160,16 +161,16 @@ hr.dropdown-divider {
   text-align: center;
 }
 /*---------------Banner------------------*/
-#banner .these{
-  background-color: #8FCB5D;
-  width: 377px;
-  height: 105px;
-  border-radius: 78px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
+#banner .these {
+    background-color: #8FCB5D;
+    width: 170%;
+    height: 105px;
+    border-radius: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 .text_b {
   position: absolute;
@@ -496,10 +497,10 @@ img.logop {
     display: none;
 }
 .owl-dots {
-    margin-top: -40px;
-    position: absolute;
-    left: 0;
-    right: 0;
+  bottom: 3%;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 .owl-theme .owl-dots .owl-dot span {
     background: #8fcb5d !important;
@@ -743,11 +744,9 @@ section#unidades {
 #amenities .amenities .parimary {
   font-weight: 900;
 }
-#unidades .vgrid .zoom {
-   /* width: 30px;*/
-    margin-left: 20px;
-    transform: translateY(-3px);
-}
+/*#unidades .vgrid .zoom {
+  transform: translateY(-3px);
+}*/
 #unidades .vgrid .text {
   color: black;
   font-weight: 500;
@@ -760,8 +759,6 @@ section#unidades {
 .vgrid .wrap_image_project {
   position: relative;
   margin-bottom: 20px;
-  padding-left: 20px;
-  padding-top: 20px;
 }
 /*.vgrid .wrap_image_project:before {
   position: absolute;
@@ -985,7 +982,7 @@ section#mask_group {
 #mask_group .grid_mask{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 150px;
+  grid-column-gap: 100px;
   padding-top: 50px;
   padding-bottom: 100px;
 }
@@ -1013,6 +1010,9 @@ section#mask_group {
   width: 91px;
   border-radius: 50px;
 }
+.number .display-1 {
+    margin-bottom: 0;
+}
 .header_mask {
     display: flex;
     flex-direction: row;
@@ -1022,7 +1022,7 @@ section#mask_group {
     background-color: #8CC85D;
     height: 91px;
     width: 91px;
-    border-radius: 50px;
+    border-radius: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1270,6 +1270,15 @@ section#mask_group {
   grid-column-gap: 1vw;
   margin-top: 18px;
 }
+.ugrid .part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#amenities .ugrid .text {
+  padding-left: 0;
+}
 .ugrid .wrap1{
   grid-column-start: 1;
   grid-column-end: 2;
@@ -1393,10 +1402,22 @@ section#mask_group {
     margin-bottom: 50px;
     color: white;
   }
-
+  .vgrid .wrap_image_project {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-top: 0;
+  }
   #unidades .vgrid {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+  .search {
+    margin-bottom: 0px;
+  }
+  .info_project {
+    margin-top: 0;
   }
   .desktop{
     display: none;
@@ -1480,9 +1501,7 @@ section#mask_group {
   #storage {
     margin-top: 50px;
   }
-  .wrap_image_project img {
-    width: 70%;
-  }
+
   /*.vgrid .wrap_image_project:before {
     height: 100px;
     width: 100px;
@@ -1692,12 +1711,46 @@ section#mask_group {
 @media (max-width: 767.98px) {
   h1.display-1.primary {
     color: #5716A3;
-    font-size: 90px;
+    font-size: 70px;
     font-weight: 900;
     margin-bottom: 0;
   }
-
-}
+  .tptittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  img.tpimages {
+    padding-bottom: 0;
+  }
+  .col-12.unid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .amenities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    margin: 5px 4px;
+  }
+  .owl-dots {
+    bottom: 1%;
+  }
+  .center {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
 @media (max-width: 575.98px) {
   #theproject {
@@ -1723,6 +1776,12 @@ section#mask_group {
     row-gap: 20px;
     justify-content: center;
     align-items: center;
+  }
+  #banner .these {
+    display: none;
+  }
+  .text_b .btn.btn-primary {
+    display: none;
   }
 
 }

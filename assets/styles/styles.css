@@ -55,13 +55,13 @@ section {
 .btn.btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
-  /*padding: 6px 24px !important;*/
+  padding: 6px 44px;
   color: #5716A3 !important;
   border-radius: 29px;
   font-weight: 700 !important;
-  box-shadow: 0px 3px 6px #00000029;
-  width: fit-content;
-  min-width: 157px;
+  box-shadow: 0px 3px 6px #00000029 !important;
+  /*width: fit-content;
+  min-width: 157px;*/
   height: 45px;
   /* margin-bottom: 0; */
   text-align: center;
@@ -70,6 +70,7 @@ section {
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
   background-color: var(--btn-hover)!important;
   border-color: var(--btn-hover)!important;
+  box-shadow: none;
 }
 display-1, display-3, display-4{
     display: flex;
@@ -100,7 +101,7 @@ header {
 }
 a.nav-link {
     /* margin-right: 1rem !important; */
-    margin-left: 24px !important;
+    margin-left: 14px !important;
 }
 .nav-link {
   text-align: left;
@@ -171,10 +172,10 @@ hr.dropdown-divider {
   margin-bottom: 20px;
 }
 .text_b {
-    position: absolute;
-    z-index: 1;
-    margin-top: -400px;
-    left: 130px;
+  position: absolute;
+  z-index: 1;
+  left: 10%;
+  bottom: 34%;;
 }
 .item {
     position: relative;
@@ -274,8 +275,11 @@ hr.dropdown-divider {
 .rectangle .tertiary {
    text-align: center;
    margin-bottom: 0;
-   font-weight: 300;
+   font-weight: 400;
    font-size: 29px;
+}
+.grid_finance .text {
+    margin-bottom: 0;
 }
 .grid_finance {
   display: grid;
@@ -753,9 +757,6 @@ section#unidades {
   border-bottom: solid 2px #8FCB5D;
   margin: 10px 0;
 }
-.info_project {
-  padding-right: 45px;
-}
 .vgrid .wrap_image_project {
   position: relative;
   margin-bottom: 20px;
@@ -798,6 +799,9 @@ img.search {
 .info_project {
     padding-right: 45px;
     margin-top: 12px;
+}
+.vgrid .info_project .tertiary {
+    font-weight: 700;
 }
 #unidades .vgrid{
   display: grid;
@@ -1679,22 +1683,9 @@ section#mask_group {
 }
 
 @media (max-width: 575.98px) {
-  .grid_finance .item2{
-    padding-left: 15px;
-  }
-
-  .grid_finance .item4{
-    padding-left: 15px;
-  }
-
-  .grid_finance .item6{
-    padding-left: 15px;
-  }
   #theproject {
     margin-top: 45px;
   }
-
-
   #amenities .ugrid .text {
     padding-top: 5px;
     padding-bottom: 10px;

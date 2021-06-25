@@ -949,12 +949,17 @@ img.search {
 #ftheproject .three{
   background-color: #8FCB5D;
   height: 86px;
-  width: 521px;
-  border-radius: 29px;
+  padding: 0 12%;
+  width: fit-content;
+  border-radius: 78px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+.three .secondary {
+    margin-bottom: 0;
 }
 #ftheproject .quintary {
   color: black;
@@ -965,7 +970,8 @@ img.search {
   font-size: 14px;
 }
 .wrap_img {
-    margin-top: 44px;
+  margin-top: 44px;
+  text-align: center;
 }
 .wrap_img img {
     margin-right: 25px;
@@ -1669,6 +1675,17 @@ section#mask_group {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+  .grid_mask .tertiary {
+    text-align: center;
+  }
+  .grid_mask .text {
+    text-align: center;
+  }
+  #ftheproject .primary {
+    margin-top: 20px;
+    margin-bottom: 44px;
+    text-align: center;
   }
 }
 

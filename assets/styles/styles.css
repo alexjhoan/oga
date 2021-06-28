@@ -107,7 +107,7 @@ a.nav-link {
   color: #FFFDFD !important;
 }
 a.nav-link.btn.btn-primary {
-    min-width: 100%;
+   /* min-width: 100%;*/
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -1242,14 +1242,14 @@ section#mask_group {
 }
 
 @media (max-width: 991.98px) {
-  .btn.btn-primary {
+  /*.btn.btn-primary {
     background-color: var(--primary);
     border-color: var(--primary);
     padding: 6px 20px !important;
     color: #5716A3 !important;
     border-radius: 20px;
     font-weight: 500;
-  }
+  }*/
   .navbar-collapse {
     background: rgba(117, 86, 192, 0.8);
     position: fixed;
@@ -1397,7 +1397,7 @@ section#mask_group {
     position: relative;
   }*/
    .red {
-    margin-top: 50px;
+    margin-top: 30px;
   }
   .privacy {
     padding-top: 50px;
@@ -1426,6 +1426,14 @@ section#mask_group {
   }
   .search {
     margin-bottom: 0px;
+    width: 75%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img.zoom {
+    width: 75%;
   }
   .info_project {
     margin-top: 0;
@@ -1507,7 +1515,7 @@ section#mask_group {
     height: 25vh;
   }
   .info_project {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
   #storage {
     margin-top: 50px;
@@ -1539,6 +1547,7 @@ section#mask_group {
     grid-row-start: 1;
     grid-row-end: 2;
     text-align: center;
+    margin-top: 20px;
   }
   #unidades .vgrid .itemproject2 {
     grid-column-start: 1;
@@ -1558,6 +1567,7 @@ section#mask_group {
   #unidades .pgrid {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 20px;
   }
    #unidades .pgrid .dividerLine {
     left: 0;
@@ -1616,7 +1626,7 @@ section#mask_group {
     text-align: left;
   }
   .tpgrid {
-    margin-top: 30px;
+    margin-top: 0;
   }
   #theproject .project_m{
     text-align: center;
@@ -1646,11 +1656,11 @@ section#mask_group {
   }
   .tpgrid .itemtheproject1 .part {
     display: block;
-    padding-bottom: 5vh;
+    padding-bottom: 4vh;
     width: 100%;
   }
   .tpgrid .itemtheproject2 {
-    margin-top: 20px;
+    margin-top: 0;
     padding-left: 0;
   }
   #green_banner .wrap_green {
@@ -1714,11 +1724,81 @@ section#mask_group {
   }
   #ftheproject .primary {
     margin-top: 20px;
-    margin-bottom: 44px;
+    margin-bottom: 20px;
     text-align: center;
   }
-}
+  #finance .inic_banner .primary {
+    margin-top: 47px;
+    margin-bottom: 10px;
+    color: #5716a3;
+    text-align: center;
+  }
+  #border_banner .wrap_btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #border_banner .primary {
+    text-align: center;
+  }
+  #finance .rectangle {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #finance .inic_banner .quintary {
+    text-align: center;
+  }
+  img.aimages {
+    padding-right: 0;
+  }
+  #unidades .ver {
+    margin-top: 0;
+    text-align: center;
+  }
+  .project2 {
+    margin-top: 20px;
+  }
+  form#contactForm {
+    text-align: center;
+  }
+  button.btn.btn-primary.mt-3 {
+    margin-top: 20px !important;
+  }
+  #border_banner {
+    margin-top: 20px;
+  }
+  .grid_finance {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2px;
+  }
+  #ubication {
+    padding-top: 57px;
+  }
+  #ubication .ubication .quintary {
+    padding-bottom: 50px;
+  }
+  section#mask_group {
+    background-color: #5716A3;
+    margin-top: 57px;
+  }
+  a.whatsapp.strong {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  ul.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-left: 20px;
+  }
 
+}
 @media (max-width: 767.98px) {
   h1.display-1.primary {
     color: #5716A3;
@@ -1750,10 +1830,10 @@ section#mask_group {
     margin-bottom: 30px;
   }
   .owl-theme .owl-dots .owl-dot span {
-    margin: 5px 4px;
+    margin: 0 3px;
   }
   .owl-dots {
-    bottom: 1%;
+    bottom: 0;
   }
   .center {
     text-align: center;

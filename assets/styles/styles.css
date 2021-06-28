@@ -16,7 +16,7 @@ p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
   color: var(--text);
 }
 h1{
-  font-weight: 600;
+  font-weight: 900;
 }
 h2{
   font-weight: 900;
@@ -60,7 +60,7 @@ section {
   border-radius: 29px;
   font-weight: 700 !important;
   box-shadow: 0px 3px 6px #00000029 !important;
-  height:100%;
+  height: 45px;
   text-align: center;
 }
 
@@ -130,10 +130,21 @@ div#navbarSupportedContent {
   margin-bottom: auto;
   margin-top: auto;
 }*/
-
+.linea_m {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+span.m_line {
+    width: 35px;
+    height: 3px;
+    margin: 3px 0;
+    background: white;
+    border-radius: 29px;
+}
 .navbar-light .navbar-toggler {
-  color: rgba(250,250,250,.55) !important;
-  border-color: rgba(250,250,250,.55) !important;
+  border:none;
   top: 0;
   bottom: 0;
 }
@@ -334,17 +345,16 @@ hr.dropdown-divider {
 }
 #finance .img_finance {
   position: absolute;
-  height: 630px;
+  height: 100%;
   right: 0;
   z-index: 1;
-  bottom: -1px;
+  top: 2px;
 }
 /*---------------Finances Banner------------------*/
 #border_banner{
   background-color: #5716A3;
   margin-top: 50px;
-  padding-bottom: 10px;
-  padding-top: 15px;
+  padding: 35px;
 }
 #border_banner .primary{
   color: #FFFFFF;
@@ -503,7 +513,9 @@ img.logop {
   right: 0;
 }
 .owl-theme .owl-dots .owl-dot span {
-    background: #8fcb5d !important;
+  background: #8fcb5d !important;
+  width: 12px;
+  height: 12px;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: #DFFAC8 !important;
@@ -538,7 +550,7 @@ button:focus {
   max-width: 100%;
 }
 .itemtheproject1 .part img {
-  padding-right: 2vw;
+  padding-right: 27px;
 }
 .tpgrid{
   display: grid;
@@ -1053,12 +1065,12 @@ section#mask_group {
   color: #396DB9;
   font-weight: 900 !important;
 }
-#aramar_group .text{
-  color: #396DB9;
-}
-#aramar_group .quintary{
-  color: #1A1A1A;
+#aramar_group .text {
+  color: black;
   font-size: 14px;
+}
+p.text.text1 {
+    margin-top: 27px;
 }
 #aramar_group .grid_aramar .primary {
   color: #396DB9;
@@ -1078,15 +1090,17 @@ section#mask_group {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 23px;
 }
-#aramar_group .grid_aramar{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
+#aramar_group .grid_aramar {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 19px;
 }
-#aramar_group .grid_aramar .iteminfo1{
+/*#aramar_group .grid_aramar .iteminfo1{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -1109,7 +1123,7 @@ section#mask_group {
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-}
+}*/
 /*---------------know------------------*/
 #know {
   margin-top: 87px;
@@ -1126,12 +1140,15 @@ section#mask_group {
   padding-top:  56.25%;
   position: relative;
 }
-#know .wrap_video iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
+#know .wrap_video {
+    padding-top: 56.25%;
+    position: relative;
+    width: 810px;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 /*-----------------------------------------theowner.html--------------------------------------------*/
 /*---------------group------------------*/
@@ -1216,7 +1233,17 @@ section#mask_group {
 }
 
 
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+
+.tpgrid .itemtheproject2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-left: 90px;
+    padding-top: 20px;
+  }
+}
 
 @media (max-width: 1199.98px) {
   #mask_group .number {
@@ -1239,26 +1266,20 @@ section#mask_group {
     font-size: 1rem;
     white-space: nowrap;
   }
+  .tpgrid .itemtheproject2 {
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 991.98px) {
-  /*.btn.btn-primary {
-    background-color: var(--primary);
-    border-color: var(--primary);
-    padding: 6px 20px !important;
-    color: #5716A3 !important;
-    border-radius: 20px;
-    font-weight: 500;
-  }*/
   .navbar-collapse {
     background: rgba(117, 86, 192, 0.8);
     position: fixed;
     left: 0;
     top: 57px;
   }
-  /*.navbar-collapse .navbar-nav .nav-item a {
-    margin-left: 20px;
-  }*/
   nav.navbar.navbar-expand-lg.navbar-light {
     padding-top: .5rem;
   }
@@ -1273,7 +1294,6 @@ section#mask_group {
   }
   .ugrid {
     margin-top: 40px;
-    /*text-align: center;*/
   }
 .ugrid {
   display: grid;
@@ -1796,6 +1816,9 @@ section#mask_group {
     flex-direction: column;
     align-items: end;
     padding-left: 20px;
+  }
+  .tpgrid .itemtheproject2 {
+    text-align: center;
   }
 
 }

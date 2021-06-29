@@ -97,12 +97,12 @@ a.nav-link {
   color: #FFFDFD !important;
 }
 a.nav-link.btn.btn-primary {
-  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6px 25px;
+  padding: 6px 24px;
+  height: auto;
 }
 .navbar-nav {
   margin-left: auto;
@@ -1131,11 +1131,18 @@ iframe {
 
 @media (min-width: 1200px) {}
 
+@media (min-width: 1440px) {
+  section#mask_group {
+    background: linear-gradient( 180deg, #5716a300 40%, #5716a3 50%), url(../images/Mask_Group.svg);
+  }
+}
+
 @media (min-width:1800px) {
   #theproject img.llave {
    left: 4%;
   }
 }
+
 
 
 @media (max-width: 1399.98px) {
@@ -1204,11 +1211,22 @@ iframe {
 }
 
 @media (max-width: 991.98px) {
+  header {
+    height: 63px;
+  }
+  header nav.navbar a.navbar-brand {
+      padding-top: 0;
+      padding-bottom: 0;
+  }
+
+  .navbar-light .navbar-toggler {
+      padding-right: 0;
+  }
   .navbar-collapse {
     background: rgba(117, 86, 192, 0.8);
     position: fixed;
     left: 0;
-    top: 57px;
+    top: 63px;
   }
   nav.navbar.navbar-expand-lg.navbar-light {
     padding-top: .5rem;
@@ -1217,10 +1235,10 @@ iframe {
     width: 60px;
   }
   #pbanner {
-    margin-top: 57px;
+    margin-top: 63px;
   }
   #banner {
-    margin-top: 57px;
+    margin-top: 63px;
   }
   .ugrid {
     margin-top: 40px;
@@ -1631,6 +1649,8 @@ iframe {
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    padding-top: 57px;
+    padding-bottom: 57px;
   }
   #mask_group .number {
     justify-content: center;
@@ -1651,6 +1671,9 @@ iframe {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
+  }
+  section#ftheproject .wrap_img img {
+    margin-right: 0;
   }
   #finance .inic_banner .primary {
     margin-top: 47px;
@@ -1676,9 +1699,7 @@ iframe {
   #finance .inic_banner .quintary {
     text-align: center;
   }
-  img.aimages {
-    padding-right: 0;
-  }
+  
   #unidades .ver {
     margin-top: 0;
     text-align: center;
@@ -1743,7 +1764,6 @@ iframe {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* margin-right: auto; */
   }
   .wrap_img {
     margin-top: 44px;
@@ -1777,22 +1797,12 @@ iframe {
     align-items: center;
     text-align: center;
   }
-    .tptittle {
+  .tptittle {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-  }
-  #banner .these {
-    background-color: #8FCB5D;
-    border-radius: 78px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    padding: 15px 45px;
   }
   .text_b {
     position: absolute;
@@ -1800,15 +1810,7 @@ iframe {
     left: 10%;
     bottom: 25%;
   }
-}
-
-@media (max-width: 767.98px) {
-  h1.display-1.primary {
-    color: #5716A3;
-    font-size: 70px;
-    font-weight: 900;
-    margin-bottom: 0;
-  }
+ 
   img.tpimages {
     padding-bottom: 0;
   }
@@ -1824,6 +1826,9 @@ iframe {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+  }
+  img.aimages {
+      padding-right: 0px;
   }
 }
 

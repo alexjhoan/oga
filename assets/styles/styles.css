@@ -974,6 +974,7 @@ img.villa {
     position: absolute;
     height: auto;
     width: 30%;
+    max-width: 455px;
     left: 5%;
     z-index: 10;
     bottom: -178px;
@@ -1129,30 +1130,6 @@ p.text.text1 {
     justify-content: center;
     column-gap: 19px;
 }
-/*#aramar_group .grid_aramar .iteminfo1{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-#aramar_group .grid_aramar .iteminfo2{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-#aramar_group .grid_aramar .iteminfo3{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-#aramar_group .grid_aramar .iteminfo4{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}*/
 /*---------------know------------------*/
 #know {
   margin-top: 87px;
@@ -1316,6 +1293,14 @@ iframe {
     padding-top: 20px;
     text-align: center;
   }
+  img.villa {
+    position: absolute;
+    height: auto;
+    width: 34%;
+    left: 2%;
+    z-index: 10;
+    bottom: -24%;
+}
 }
 
 @media (max-width: 991.98px) {

@@ -8,7 +8,6 @@
   --text-hover: #191920;
   --btn: #e8b600;
   --btn-hover: #e8b600;
-  font-size: 16px;
 }
 
 p.h1, h1, p.h2, h2, p.h3, h3, p.h4, h4, p.h5, h5, p.h6, h6 {
@@ -274,7 +273,6 @@ hr.dropdown-divider {
   margin-bottom: 32px;
   margin-top: 22px;
 }
-
 #finance .rectangle{
   background-color: #5716A3;
   height: 46px;
@@ -491,25 +489,29 @@ img.imgwhatsapp {
 /*--------Privacy--------*/
 .pprivacy{
   background-color: #5716A3;
+  position: relative;
 }
-.lprivacy{
-  padding-top: 144px;
-  text-align: end;
-}
-.pritittle{
-  padding-top: 12px;
+
+.pprivacy .textPrivacy{
   font-size: 9px;
+  width: 100%;
+  max-width: 1000px;
 }
-.logtittle{
-  padding-bottom: 0;
-  margin-bottom: 0;
+.pprivacy .lprivacy {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.pprivacy .lprivacy p{
   font-size: 9px;
-  padding-right: 85px;
+  margin-bottom: -4px;
 }
-img.logop {
-  width: 40%;
-  padding-bottom: 20px;
+.pprivacy .lprivacy img{
+  max-height: 22px;
+  width: auto;
+  height: auto;
 }
+
 /*-----------------------------------------Project.html--------------------------------------------*/
 /*---------------Project Banner------------------*/
 .owl-nav {
@@ -1238,12 +1240,9 @@ iframe {
   .mobile{
     display: none;
   }
-
 }
 
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}
 
 @media (min-width:1800px) {
   #theproject img.llave {
@@ -1253,6 +1252,7 @@ iframe {
 
 
 @media (max-width: 1399.98px) {
+<<<<<<< HEAD
 
 .tpgrid .itemtheproject2 {
     grid-column-start: 1;
@@ -1261,6 +1261,10 @@ iframe {
     grid-row-end: 3;
     padding-left: 90px;
     padding-top: 20px;
+=======
+  .pprivacy{
+    padding-bottom: 40px;
+>>>>>>> dev
   }
 }
 

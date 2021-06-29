@@ -1875,8 +1875,6 @@ iframe {
     margin-top: 44px;
     text-align: center;
 }
-
-
 }
 @media (max-width: 767.98px) {
   h1.display-1.primary {
@@ -1921,7 +1919,7 @@ iframe {
     align-items: center;
     justify-content: center;
   }
-
+}
 @media (max-width: 575.98px) {
   #theproject {
     margin-top: 45px;
@@ -1953,5 +1951,4 @@ iframe {
   .text_b .btn.btn-primary {
     display: none;
   }
-
 }

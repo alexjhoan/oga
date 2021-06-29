@@ -1144,18 +1144,19 @@ p.text.text1 {
 }
 #know .wrap_video {
  /*   padding-top: 56.25%;*/
-    position: relative;
-    width: 810px;
-    max-width: 100%;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  width: 810px;
+  max-width: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 iframe {
-    border: 0;
-    width: 100%;
-    height: 100%;
+  border: 0;
+  width: 100%;
+  height: 390px;
+   /* height: 100%;*/
 }
 /*-----------------------------------------theowner.html--------------------------------------------*/
 /*---------------group------------------*/

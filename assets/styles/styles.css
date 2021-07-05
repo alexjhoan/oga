@@ -437,8 +437,34 @@ img.imgwhatsapp {
 
 /*-----------------------------------------Project.html--------------------------------------------*/
 /*---------------Project Banner------------------*/
-.owl-nav {
+/*.owl-nav {
   display: none;
+}*/
+.owl-prev {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 40%;
+  left: 1%;
+  display: block !important;
+  border: 3px solid white!important;
+  border-radius: 29px !important;
+}
+.owl-next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 40%;
+  right: 1%;
+  display: block !important;
+  border: 3px solid white!important;
+  border-radius: 29px !important;
+}
+.owl-prev i, .owl-next i {
+  transform : scale(1,6); color: #ccc;
+}
+.owl-theme .owl-nav [class*=owl-] {
+  font-size: 30px !important;
 }
 .owl-dots {
   bottom: 3%;
@@ -516,7 +542,6 @@ button:focus {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  padding-left: 6vw;
   padding-top: 20px;
 }
 img.tpimages {
@@ -833,7 +858,7 @@ img.search {
   background-color: #5716A3;
   border-radius: 48px;
   height: 96px;
-  width: 710px;
+  width: 610px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -887,7 +912,7 @@ img.villa {
 #ftheproject .three{
   background-color: #8FCB5D;
   height: 86px;
-  padding: 0 12%;
+  padding: 0 3%;
   width: fit-content;
   border-radius: 78px;
   display: flex;
@@ -1151,7 +1176,6 @@ iframe {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    padding-left: 90px;
     padding-top: 20px;
   }
   .pprivacy{
@@ -1190,9 +1214,7 @@ iframe {
     white-space: nowrap;
   }
   .tpgrid .itemtheproject2 {
-    padding-left: 0;
     padding-top: 20px;
-    text-align: center;
   }
   img.villa {
     position: absolute;
@@ -1605,7 +1627,6 @@ iframe {
   }
   .tpgrid .itemtheproject2 {
     margin-top: 0;
-    padding-left: 0;
   }
   #green_banner .wrap_green {
     display: flex;
@@ -1699,7 +1720,7 @@ iframe {
   #finance .inic_banner .quintary {
     text-align: center;
   }
-  
+
   #unidades .ver {
     margin-top: 0;
     text-align: center;
@@ -1777,6 +1798,9 @@ iframe {
   }
 }
 @media (max-width: 767.98px) {
+  .owl-nav {
+    display: none;
+  }
   h1.display-1.primary {
     color: #5716A3;
     font-size: 70px;
@@ -1810,7 +1834,7 @@ iframe {
     left: 10%;
     bottom: 25%;
   }
- 
+
   img.tpimages {
     padding-bottom: 0;
   }

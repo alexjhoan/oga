@@ -730,18 +730,6 @@ img.piscina {
   height: 100%;
   right: 0;
 }
-#zbanner .owl-nav {
-  display: none;
-}
-#zbanner .owl-dots {
-  margin-top: -40px;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-#zbanner .owl-theme .owl-dots .owl-dot span {
-  background: #8fcb5d !important;
-}
 /*---------------Unidades-index------------------*/
 section#unidades {
   padding-top: 135px;

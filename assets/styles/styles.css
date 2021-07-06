@@ -565,13 +565,12 @@ button:focus {
   padding-top: 20px;
 }
 img.upimages{
-    /* padding-right: 20px; */
-    /* padding-bottom: 51px; */
-    transform: translateY(-25px);
+  transform: translateY(-49px);
+  margin-bottom: -42px;
 }
 img.tpimages{
-  padding-right: 20px;
-  padding-bottom: 51px;
+  transform: translateY(-49px);
+  margin-bottom: -42px;
 }
 /*---------------Ubication------------------*/
 #ubication{
@@ -581,6 +580,7 @@ img.tpimages{
 .tptittle {
   font-weight: 900;
   color: #5716A3;
+  margin-bottom: 0;
 }
 
 h1.display-1.primary {
@@ -601,13 +601,8 @@ h1.display-4.primary {
   line-height: 30px;
 }
 img.uimages {
-  padding-right: 20px;
- /* margin-bottom: 20px;*/
-  transform: translateY(-25px);
-}
-img.utimages {
-  padding-right: 20px;
-  margin-bottom: 20px;
+  transform: translateY(-49px);
+  margin-bottom: -42px;
 }
 
 /*---------------Amenities------------------*/
@@ -620,9 +615,8 @@ img.utimages {
   align-items: center;
 }
 img.aimages {
-  padding-right: 10px;
-  /* padding-bottom: 25px; */
-  transform: translateY(-25px);
+  transform: translateY(-49px);
+  margin-bottom: -42px;
 }
 #amenities .ugrid .text {
   padding-left: 12px;
@@ -842,7 +836,7 @@ img.search {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 6vmax;
-  margin-top: 112px;
+  margin-top: 50px;
 }
 #unidades .pgrid .itemproject1{
   grid-column-start: 1;
@@ -1039,12 +1033,6 @@ section#mask_group {
 /*-----------------------------------------Backboard.html--------------------------------------------*/
 /*---------------Aramar_group------------------*/
 
-#main_backboard {
- /* background-image: url(../images/empresa.jpg);*/
- /* height: 300px;*/
- /* background-repeat: no-repeat;
-  background-attachment: fixed;*/
-}
 #aramar_group {
   margin-top: 61px;
 }
@@ -1275,6 +1263,7 @@ iframe {
   }
   .navbar-light .navbar-toggler {
       padding-right: 0;
+      margin-left: 10px;
   }
   .navbar-collapse {
     background: rgba(117, 86, 192, 0.8);
@@ -1289,7 +1278,7 @@ iframe {
     width: 60px;
   }
   a.nav-link.btn.btn-primary.d-block.d-lg-none.dif {
-    margin-left: 35% !important;
+    margin-left: auto!important;
   }
   #pbanner {
     margin-top: 63px;
@@ -1404,7 +1393,7 @@ iframe {
     padding-bottom: 5px;
   }
   section#main_backboard {
-    margin-top: 57px;
+    margin-top: 63px;
   }
   .btn.btn-primary {
     width: fit-content;
@@ -1622,8 +1611,8 @@ iframe {
     margin-top: 0;
   }
   .info_project {
-    padding-right: 45px;
-    padding-left: 45px;
+    padding-right: 0;
+    padding-left: 0;
     text-align: left;
   }
   .tpgrid {
@@ -1843,9 +1832,6 @@ iframe {
 
 }
 @media (max-width: 767.98px) {
-  a.nav-link.btn.btn-primary.d-block.d-lg-none.dif {
-    margin-left: 15% !important;
-  }
   .owl-nav {
     display: none;
   }
@@ -1893,9 +1879,6 @@ iframe {
   }
   img.imgnavbar {
     width: 80px;
-  }
-  a.nav-link.btn.btn-primary.d-block.d-lg-none.dif {
-    margin-left: 0% !important;
   }
   #theproject {
     margin-top: 45px;

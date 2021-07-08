@@ -53,6 +53,7 @@ section {
   box-shadow: 0px 3px 6px #00000029 !important;
   height: 45px;
   text-align: center;
+  width: fit-content;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
@@ -63,6 +64,16 @@ section {
 display-1, display-3, display-4{
   display: flex;
 }
+a.btn.btn-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav-item:hover {
+    box-shadow: 0px 3px 6px #00000029 !important;
+    transform: translateY(-2px);
+}
 /*-----------------------------------------INDEX--------------------------------------------*/
 /*----------------------------Web-------------------------------*/
 /*---------------Header------------------*/
@@ -71,6 +82,7 @@ display-1, display-3, display-4{
     width: auto;
 }
 */
+
 
 header {
   position: fixed;
@@ -134,26 +146,27 @@ span.m_line {
   top: 0;
   bottom: 0;
 }
-ul.dropdown-menu.show {
+.dropdown-menu.show {
   background-color: rgba(117, 86, 192, 0.8);
   border: none;
 }
-ul.dropdown-menu.show a {
+.dropdown-menu.show a {
   color: white;
 }
 .dropdown-item:focus, .dropdown-item:hover {
   background-color: rgba(117, 86, 192, 0.8);
 }
-hr.dropdown-divider {
-  color: #fffdfd !important;
-  height: 2px;
+.dropdown-divider {
+  /*height: 2px;*/
   width: 85%;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  border-top: 2px solid #ffffff !important;
+  opacity: 0.5;
 }
-.dropdown-menu li {
+.dropdown-menu{
   text-align: center;
 }
 /*---------------Banner------------------*/
@@ -1749,7 +1762,7 @@ iframe {
   form#contactForm {
     text-align: center;
   }
-  button.btn.btn-primary.mt-3 {
+  .btn.btn-primary.mt-3 {
     margin-top: 20px !important;
   }
   #border_banner {

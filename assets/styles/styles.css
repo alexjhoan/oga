@@ -134,11 +134,13 @@ span.m_line {
   top: 0;
   bottom: 0;
 }
-ul.dropdown-menu.show {
+ul.dropdown-menu {
   background-color: rgba(117, 86, 192, 0.8);
   border: none;
+  margin-top: 9px;
+  display: block;
 }
-ul.dropdown-menu.show a {
+ul.dropdown-menu a {
   color: white;
 }
 .dropdown-item:focus, .dropdown-item:hover {

@@ -1214,7 +1214,7 @@ iframe {
 
 @media (min-width: 992px) {
   #login .banner {
-    background-image: url(https://via.placeholder.com/767x900?text=Banner);
+    background-image: url(../images/dueño.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

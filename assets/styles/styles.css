@@ -607,8 +607,21 @@ img.tpimages{
 /*---------------Ubication------------------*/
 #ubication{
   background: #8FCB5D;
-  padding-top: 90px;
+  background-image: url(../images/mapa.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+ /* padding-top: 90px;*/
 }
+.col-lg-5.d-none.d-lg-block.wow.fadeInUp {
+    padding-top: 90px;
+}
+/*.img_desk{
+background-image: url(../images/mapa.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: right;
+}*/
 .tptittle {
   font-weight: 900;
   color: #5716A3;
@@ -635,6 +648,16 @@ h1.display-4.primary {
 img.uimages {
   transform: translateY(-49px);
   margin-bottom: -42px;
+}
+
+section#ubication2 {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  text-align: center;
+}
+#ubication2 h1.tptittle {
+  margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 /*---------------Amenities------------------*/
@@ -1280,6 +1303,14 @@ iframe {
 }
 
 @media (max-width: 991.98px) {
+  #ubication {
+    background: #8FCB5D;
+ /*   background-image: url(../images/mapa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 715px;
+    padding-top: 30px;*/
+}
   .menuDropdown {
     background-color: transparent;
     margin-top: 0;
@@ -1558,7 +1589,7 @@ iframe {
     margin-top: 50px;
   }
   section#unidades {
-    margin-top: 80px;
+    margin-top: 100px;
     padding-top: 0;
   }
   #unidades .vgrid .dividerLine {
@@ -1802,7 +1833,7 @@ iframe {
     grid-row-gap: 2px;
   }
   #ubication {
-    padding-top: 57px;
+   /* padding-top: 57px;*/
   }
   #ubication .ubication .quintary {
     padding-bottom: 50px;
@@ -1824,7 +1855,10 @@ iframe {
     padding-left: 20px;
   }
   .tpgrid .itemtheproject2 {
-    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .container.project2 {
     padding-bottom: 45px;

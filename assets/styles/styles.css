@@ -389,7 +389,7 @@ span.textcontact {
 }
 .dtittle{
   margin-top: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   color: white;
 }
 .project3 .cptexth5 {
@@ -998,7 +998,7 @@ img.villa {
 #ftheproject .three{
   background-color: #8FCB5D;
   height: 86px;
-  padding: 0 3%;
+  padding: 0 5%;
   width: fit-content;
   border-radius: 78px;
   display: flex;
@@ -1474,6 +1474,10 @@ iframe {
   .btn.btn-primary {
     width: fit-content;
   }
+  .wrap_btn a {
+    margin-left: auto !important;
+    margin-top: 20px;
+  }
   .red {
     margin-top: 30px;
   }
@@ -1694,6 +1698,13 @@ iframe {
   .tpgrid {
     margin-top: 0;
   }
+  .col-12.unid {
+    justify-content: center;
+  }
+  #theproject {
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
   #theproject .project_m{
     text-align: center;
     left: 0;
@@ -1796,6 +1807,9 @@ iframe {
   section#ftheproject .wrap_img img {
     margin-right: 0;
   }
+  #ftheproject .three {
+    margin-top: 30px;
+  }
   #finance .inic_banner .primary {
     margin-top: 47px;
     margin-bottom: 10px;
@@ -1820,7 +1834,6 @@ iframe {
   #finance .inic_banner .quintary {
     text-align: center;
   }
-
   #unidades .ver {
     margin-top: 0;
     text-align: center;
@@ -1841,9 +1854,6 @@ iframe {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 2px;
-  }
-  #ubication {
-   /* padding-top: 57px;*/
   }
   #ubication .ubication .quintary {
     padding-bottom: 50px;
@@ -1914,7 +1924,6 @@ iframe {
   .owl-nav {
     display: none;
   }
-
   h1.display-1.primary {
     color: #5716A3;
     font-size: 70px;
@@ -1947,8 +1956,12 @@ iframe {
     align-items: center;
     justify-content: center;
   }
-
-
+  #ftheproject .three {
+    height: 86px;
+    padding: 10% 10%;
+    border-radius: 50px;
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 575.98px) {

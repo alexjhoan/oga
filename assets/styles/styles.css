@@ -40,7 +40,7 @@ a,p,div,input,button,textarea{
 img {
   max-width: 100%;
 }
-section {
+section:not(#ftheproject) {
   position: relative;
   overflow: hidden;
 }
@@ -374,6 +374,48 @@ span.textcontact {
   font-weight: 900;
 }
  /*--------Contact--------*/
+
+
+ #contact p.strong {
+  color: #fff;
+}
+
+#contact #formSending p.strong {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#contact #formSending p.strong span {
+  background: #fff;
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  margin: 0 3px;
+  animation: sending 1s infinite;
+}
+
+#contact #formSending p.strong span:first-child {
+  margin-left: 6px;
+}
+
+#contact #formSending p.strong span:nth-child(2) {
+  animation-delay: 200ms;
+}
+
+#contact #formSending p.strong span:last-child {
+  animation-delay: 300ms;
+}
+
+@keyframes sending {
+  50% {
+    opacity: 0.5
+  }
+  100% {
+    opacity: 1
+  }
+}
+
 #contact {
   background-color: #5716A3;
   position: relative;

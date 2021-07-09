@@ -66,11 +66,19 @@ display-1, display-3, display-4{
 }
 a.btn.btn-primary {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-
+.wrap_btn a {
+  margin-left: 0 !important;
+}
+.itemtheproject2 a{
+  margin-left: 0 !important;
+}
 .nav-item a{
   transition: all ease-in-out .2s;
 }

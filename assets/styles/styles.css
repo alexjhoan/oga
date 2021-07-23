@@ -133,7 +133,8 @@ div#navbarSupportedContent {
   padding-bottom: 0;
 }
 img.imgnavbar {
-  height: 50px;
+  height: 70px;
+  margin: -8px 0;
 }
 .linea_m {
   display: flex;
@@ -228,9 +229,13 @@ span.m_line {
 
 /*--------------- titleHome ------------------*/
 
-
-#titleHome h5, #titleHome span{
+#titleHome h6{
   color: #1a1a1a;
+  font-weight: 400;
+}
+
+#titleHome span{
+  color: #5716a3;
 }
 
 /*---------------Finances------------------*/
@@ -1432,9 +1437,6 @@ iframe {
     text-align: left;
     padding-left: 40px;
   }
-  header {
-    height: 63px;
-  }
   header nav.navbar a.navbar-brand {
       padding-top: 0;
       padding-bottom: 0;
@@ -1457,10 +1459,10 @@ iframe {
     margin-right: 0;
   }
   #pbanner {
-    margin-top: 63px;
+    margin-top: 70px;
   }
   #banner {
-    margin-top: 63px;
+    margin-top: 70px;
   }
   .ugrid {
     margin-top: 40px;
@@ -2067,6 +2069,12 @@ iframe {
 }
 
 @media (max-width: 575.98px) {
+  #pbanner {
+    margin-top: 54px;
+  }
+  #banner {
+    margin-top: 54px;
+  }
   img.imgnavbar {
     height: 45px;
   }

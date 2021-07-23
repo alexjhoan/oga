@@ -93,18 +93,10 @@ a.btn.btn-primary {
   transform: translateY(-1px);
 }
 /*-----------------------------------------INDEX--------------------------------------------*/
-/*----------------------------Web-------------------------------*/
 /*---------------Header------------------*/
-/*.fancybox-lock {
-    overflow: visible !important;
-    width: auto;
-}
-*/
-
 
 header {
   position: fixed;
-  height: 57px;
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -137,14 +129,11 @@ a.nav-link.btn.btn-primary {
 .navbar-nav {
   margin-left: auto;
 }
-nav.navbar.navbar-expand-lg.navbar-light {
-  padding-top: 4px;
-}
 div#navbarSupportedContent {
   padding-bottom: 0;
 }
 img.imgnavbar {
-  width: 40%;
+  height: 50px;
 }
 .linea_m {
   display: flex;
@@ -235,6 +224,15 @@ span.m_line {
   flex-direction: row;
   align-items: center;
 }
+
+
+/*--------------- titleHome ------------------*/
+
+
+#titleHome h5, #titleHome span{
+  color: #1a1a1a;
+}
+
 /*---------------Finances------------------*/
 #finance .inic_banner .primary{
   margin-top: 47px;
@@ -372,6 +370,11 @@ span.m_line {
 span.textcontact {
   color: #8FCB5D;
   font-weight: 900;
+}
+#precontact img{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
  /*--------Contact--------*/
 
@@ -940,45 +943,7 @@ img.search {
   grid-column-gap: 6vmax;
   margin-top: 50px;
 }
-#unidades .pgrid .itemproject1{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-#unidades .pgrid .itemproject2{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-#unidades .pgrid .itemproject3{
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-#unidades .pgrid .itemproject4{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin-top: 37px;
-}
-#unidades .pgrid .itemproject5{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin-top: 37px;
-}
-#unidades .pgrid .itemproject6{
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin-top: 37px;
-}
+
 /*---------------Storage------------------*/
 #storage {
     margin-top: 124px;
@@ -1132,33 +1097,107 @@ section#mask_group {
   font-size: 14px;
   margin-top: 20px;
 }
+
+#requirements{
+  background-color: #5716a3;
+}
+#requirements .row>div{
+  padding-bottom: 40px;
+}
+#requirements h3{
+  color: #8CC85D;
+}
+
+#requirements ul.mainUl > li{
+  list-style: none;
+  position: relative;
+  margin-bottom: 20px;
+}
+#requirements li img{
+  position: absolute;
+  width: 22px;
+  top: 7px;
+  left: -30px;
+}
+#requirements ul:not(.mainUl){
+  list-style: disc;
+}
+
+#fipav{
+  padding: 80px 0;
+}
+
+#fipav .title{
+  font-weight: 700;
+  color: #8CC85D;
+  margin-bottom: 30px;
+}
+
+#fipav p, #fipav li{
+  color: #1A1A1A;
+  margin-bottom: 0;
+  position: relative;
+  list-style: none;
+}
+
+#fipav ul.dotImg li img{
+  position: absolute;
+  width: 14px;
+  top: 7px;
+  left: -30px;
+}
+#fipav .dividerBottom {
+  width: 100%;
+  margin: 50px 0 70px;
+  border-bottom: solid 2px #8CC85D;
+}
+#fipav li{
+  margin-bottom: 20px;
+}
+#fipav li span{
+  position: absolute;
+  left: -30px;
+  background-color: #5716A3;
+  color: #fff;
+  border-radius: 100%;
+  line-height: 1;
+  height: 22px;
+  width: 22px;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 1px;
+}
+
+
 /*-----------------------------------------Backboard.html--------------------------------------------*/
 /*---------------Aramar_group------------------*/
 
-#aramar_group {
-  margin-top: 61px;
+#backboard section:not(#contact) {
+  margin-top: 66px;
+  padding-bottom: 60px;
 }
-#aramar_group .display-4{
+#backboard .display-4{
   color: #396DB9;
   font-weight: 900 !important;
 }
-#aramar_group .text {
-  color: black;
+#backboard .text {
+  color: #1a1a1a;
   font-size: 14px;
 }
-p.text.text1 {
-  margin-top: 27px;
-}
-#aramar_group .grid_aramar .primary {
+#backboard .grid_aramar .primary {
   color: #396DB9;
   font-size: 55px;
   font-weight: 900;
 }
-#aramar_group .grid_aramar .back_gray .quintary{
+#backboard .grid_aramar .back_gray .quintary{
   color: #396DB9;
   font-weight: 900;
 }
-#aramar_group .grid_aramar .back_gray {
+#backboard .grid_aramar .back_gray {
   background-color: #F5F5F5;
   width: 253px;
   height: 156px;
@@ -1169,7 +1208,7 @@ p.text.text1 {
   justify-content: center;
   margin-bottom: 23px;
 }
-#aramar_group .grid_aramar {
+#backboard .grid_aramar {
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -1178,18 +1217,18 @@ p.text.text1 {
   column-gap: 19px;
 }
 /*---------------know------------------*/
-#know {
+#backboard #know {
   margin-top: 87px;
   text-align: center;
 }
-#know .secondary{
+#backboard #know .secondary{
   color: #396DB9;
   font-size: 35px;
   font-weight: 900;
   text-align: center;
   margin-bottom: 36px;
 }
-#know .wrap_video {
+#backboard #know .wrap_video {
   position: relative;
   width: 810px;
   max-width: 100%;
@@ -1203,6 +1242,23 @@ iframe {
   width: 100%;
   height: 390px;
 }
+
+#backboard .imgLogo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: 115px;
+  margin-bottom: 50px;
+}
+
+#backboard .imgLogo img{
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  max-height: 100%;
+}
+
 /*-----------------------------------------theowner.html--------------------------------------------*/
 /*---------------group------------------*/
 #login .form-floating {
@@ -1356,6 +1412,9 @@ iframe {
 }
 
 @media (max-width: 991.98px) {
+  #titleHome h5, #titleHome span{
+    text-align: center;
+  }
   #ubication {
     background: #8FCB5D;
  /*   background-image: url(../images/mapa.png);
@@ -1393,11 +1452,9 @@ iframe {
   nav.navbar.navbar-expand-lg.navbar-light {
     padding-top: .5rem;
   }
-  .imgnavbar{
-    width: 60px;
-  }
   a.nav-link.btn.btn-primary.d-block.d-lg-none.dif {
     margin-left: auto!important;
+    margin-right: 0;
   }
   #pbanner {
     margin-top: 63px;
@@ -2010,12 +2067,8 @@ iframe {
 }
 
 @media (max-width: 575.98px) {
-  .navbar-brand {
-    margin-right: 0;
-    width: 40%;
-  }
   img.imgnavbar {
-    width: 80px;
+    height: 45px;
   }
   #theproject {
     margin-top: 45px;

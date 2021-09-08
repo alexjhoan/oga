@@ -67,6 +67,14 @@ $(document).ready(function() {
 
 
 // --------------------------form-------------------------------
+
+function getParameterByName(name) {
+	name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+	results = regex.exec(location.search);
+	return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
 function dataSubmited(data) {
   const requestOptions = {
     method: 'POST',
@@ -104,7 +112,8 @@ function submited() {
     telefono: form.phone.value,
     tel: form.phone.value,
     source: 2,
-    utm_source: "web_oga",
+    utm_source: utm_source_val != '' ? utm_source_val : "web_oga",
+    utm_campaign: utm_campaign_val != '' ? utm_campaign_val : "",
     extra: form.consult.value,
     IDpais: 2,
     IDform: 583

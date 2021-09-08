@@ -105,6 +105,8 @@ function dataSubmited(data) {
 
 function submited() {
   const form = document.querySelector('#contactForm')
+  const utm_source_val = getParameterByName('utm_source');
+  const utm_campaign_val = getParameterByName('utm_campaign');
   const data = JSON.stringify({
     nombre: form.name.value,
     apellido: "",

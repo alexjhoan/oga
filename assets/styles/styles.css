@@ -1,4 +1,5 @@
 @import "fonts.css";
+ 
 
 :root{
   --primary: #F8B600;
@@ -38,7 +39,8 @@ a,p,div,input,button,textarea{
   color: var(--text-secondary);
 }
 img {
-  max-width: 100%;
+  max-width: 100%; 
+  aspect-ratio: attr(width) / attr(height);
 }
 section:not(#ftheproject) {
   position: relative;
@@ -359,7 +361,7 @@ span.m_line {
 }
  /*--------Project1--------*/
 #precontact{
-  background-image: url(../images/banner-footer-03.jpg);
+  background-image: url(../images/banner-footer-03.avif);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 45px;
@@ -510,7 +512,7 @@ img.imgwhatsapp {
   position: relative;
 }
 .pprivacy .textPrivacy{
-  font-size: 9px;
+  font-size: 12px;
   width: 100%;
   max-width: 1000px;
 }

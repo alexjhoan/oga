@@ -46,6 +46,7 @@ $(document).ready(function() {
   /* This is basic - uses default settings */
 
   $("a#single_image").fancybox();
+  $("a.single_image").fancybox();
 
   /* Using custom settings */
 
@@ -132,5 +133,3 @@ function submited() {
   }
   form.classList.add('was-validated')
 }
-
-

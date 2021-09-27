@@ -1,5 +1,5 @@
 @import "fonts.css";
- 
+
 
 :root{
   --primary: #F8B600;
@@ -39,7 +39,7 @@ a,p,div,input,button,textarea{
   color: var(--text-secondary);
 }
 img {
-  max-width: 100%; 
+  max-width: 100%;
   aspect-ratio: attr(width) / attr(height);
 }
 section:not(#ftheproject) {
@@ -50,7 +50,7 @@ section:not(#ftheproject) {
   background-color: var(--primary);
   border-color: var(--primary);
   padding: 6px 44px;
-  color: #5716A3 !important;
+  color: #5716A3;
   border-radius: 29px;
   font-weight: 700 !important;
   box-shadow: 0px 3px 6px #00000029 !important;
@@ -60,8 +60,8 @@ section:not(#ftheproject) {
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
-  background-color: var(--btn-hover)!important;
-  border-color: var(--btn-hover)!important;
+  background-color: var(--btn-hover);
+  border-color: var(--btn-hover);
   box-shadow: none;
 }
 display-1, display-3, display-4{
@@ -1313,6 +1313,65 @@ iframe {
   border-color: #707070;
   border-radius: 0;
 }
+
+/*-----------------------------------------contact_us.html--------------------------------------------*/
+section#contact_us {
+    background: #7c651f12;
+}
+form.form_us {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contact_us .form-floating {
+    width: 70%;
+}
+#contact_us h5, h3 {
+    text-align: center;
+    margin-top: 40px;
+}
+.b_contc {
+    background-color: #820000 !important;
+    border-color: #820000 !important;
+    color: white;
+}
+.b_contc:hover,
+.b_contc:active,
+.b_contc:focus {
+    background-color: #820000 !important;
+    border-color: #820000 !important;
+}
+.present_us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bacground {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+h6.cptexth5.mb-1 {
+    font-weight: 800;
+}
+h3.cptexth5.mt-1.mb-0 {
+    font-weight: 900;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 20px;
+}
+.present_us .image {
+    position: absolute;
+    left: 30%;
+    width: 8%;
+}
+
 /*--------------------------Queries-------------------------------*/
 @media (min-width: 576px) {
 

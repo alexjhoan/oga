@@ -1318,15 +1318,16 @@ iframe {
 section#contact_us {
     background: #7c651f12;
 }
-form.form_us {
+#contact_us form.form_us {
+    max-width: 700px;
+    width: 100%;
     text-align: center;
+}
+
+#contact_us .cproject3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-#contact_us .form-floating {
-    width: 70%;
 }
 #contact_us h5, h3 {
     text-align: center;
@@ -2166,5 +2167,10 @@ h3.cptexth5.mt-1.mb-0 {
   }
   .text_b .btn.btn-primary {
     display: none;
+  }
+  #contact_us form.form_us {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
   }
 }

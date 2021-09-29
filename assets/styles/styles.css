@@ -1375,72 +1375,38 @@ h3.cptexth5.mt-1.mb-0 {
     left: 30%;
     width: 8%;
 }
-.img_ban1 {
+.img_ban2 {
     position: relative;
 }
-.img_ban1:after {
+.img_ban2:after {
     position: absolute;
     content: " ";
-    height: 400px;
-    width: 500px;
+    height: 460px;
+    width: 100%;
+    max-width: 430px;
     background-color: white;
     left: 0;
-    bottom: 55%;
+    top: -800px;
     border-radius: 100%;
     right: 0;
     margin-left: auto;
     margin-right: auto;
 }
-img.img_ban2 {
+.img_ban2 img {
     position: absolute;
-    z-index: 10000000000;
-    top: 3%;
+    z-index: 5;
+    top: -400px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    width: 100%;
+    max-width: 200px;
 }
 
 /*--------------------------Queries-------------------------------*/
 @media (min-width: 576px) {
 
-}
-@media (max-width: 1050px){
-  img.img_ban2 {
-      top: 3%;
-      width: 15%;
-  }
-}
-@media (max-width: 920px){
-  img.img_ban2 {
-      top: 3%;
-      width: 15%;
-  }
-  .img_ban1:after {
-    height: 300px;
-    width: 350px;
-    bottom: 55%;
-
-  }
-}
-@media (max-width: 767px) {
-  .img_ban1:after {
-      height: 300px;
-      width: 300px;
-  }
-}
-@media (max-width: 576px) {
-  .img_ban1:after {
-      height: 250px;
-      width: 250px;
-  }
-}
-@media (max-width: 420px) {
-  .img_ban1:after {
-      height: 200px;
-      width: 180px;
-  }
 }
 
 @media (min-width: 992px) {

@@ -1315,8 +1315,24 @@ iframe {
 }
 
 /*-----------------------------------------contact_us.html--------------------------------------------*/
-section#contact_us {
-    background: #7c651f12;
+
+.center_us1 {
+    padding: 10px;
+    background: #fff;
+    clip-path: polygon(0% 0%, 95% 0, 100% 50%, 95% 100%, 0% 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.center_us1 img {
+    width: 70%;
+}
+.center_us2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 #contact_us form.form_us {
     max-width: 700px;
@@ -1346,61 +1362,63 @@ section#contact_us {
 }
 .present_us {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+.bacground {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.bacground {
-    margin-bottom: 100px;
+.present_img {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 10%;
+    padding-top: 24px;
 }
 h5.quintary.mb-3.mt-5 {
     text-align: center;
 }
-h6.cptexth5.mb-1 {
+h5.cptexth5.mb-1 {
     font-weight: 800;
 }
 h3.cptexth5.mt-1.mb-0 {
     font-weight: 900;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 80px;
-    padding-right: 20px;
+    padding: 10px 20px;
 }
-.present_us .image {
-    position: absolute;
-    left: 30%;
-    width: 8%;
-}
-.img_ban2 {
-    position: relative;
-}
+
 .img_ban2:after {
     position: absolute;
     content: " ";
-    height: 460px;
-    width: 100%;
+    height: 250%;
+    width: 50%;
+    top: -125%;
     max-width: 430px;
     background-color: white;
-    left: 0;
-    top: -800px;
     border-radius: 100%;
+}
+.img_ban2 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 0;
+    top: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
 }
 .img_ban2 img {
-    position: absolute;
+    position: relative;
     z-index: 5;
-    top: -400px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+    width: 30%;
     max-width: 200px;
 }
 
@@ -1432,7 +1450,9 @@ h3.cptexth5.mt-1.mb-0 {
 }
 
 
-@media (min-width: 1200px) {}
+@media (max-width: 1200px) {
+
+}
 
 @media (min-width: 1440px) {
   section#mask_group {

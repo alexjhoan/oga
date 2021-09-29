@@ -1382,6 +1382,7 @@ img.image {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .present_img {
     display: flex;

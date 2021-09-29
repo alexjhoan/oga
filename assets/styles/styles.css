@@ -1371,11 +1371,10 @@ section#contact_us {
     margin-bottom: 10%;
 }
 img.image {
-    width: 100%;
-    max-width: 80px;
-    padding-bottom: 23px;
+    width: 80px;
     position: absolute;
-    left: 30%;
+    left: -55px;
+    top: -25px;
 }
 .bacground {
     display: flex;
@@ -1399,6 +1398,7 @@ h5.cptexth5.mb-1 {
 h3.cptexth5.mt-1.mb-0 {
     font-weight: 900;
     padding: 10px 40px;
+    position: relative;
 }
 
 .img_ban2:after {
@@ -1432,45 +1432,6 @@ h3.cptexth5.mt-1.mb-0 {
 }
 
 /*--------------------------Queries-------------------------------*/
-@media (min-width: 576px) {
-
-}
-
-@media (min-width: 1500px) {
-  img.image {
-    left: 32%;
-  }
-}
-@media (min-width: 1600px) {
-  img.image {
-    left: 34%;
-  }
-}
-@media (min-width: 1800px) {
-  img.image {
-    left: 36%;
-  }
-}
-@media (max-width: 1200px) {
-  img.image {
-    left: 26%;
-  }
-}
-@media (max-width: 1050px) {
-  img.image {
-    left: 23%;
-  }
-}
-@media (max-width: 930px) {
-  img.image {
-    left: 20%;
-  }
-}
-@media (max-width: 840px) {
-  img.image {
-    left: 18%;
-  }
-}
 
 @media (min-width: 992px) {
   #login .banner {
@@ -2225,6 +2186,9 @@ h3.cptexth5.mt-1.mb-0 {
     border-radius: 50px;
     margin-top: 30px;
   }
+  .center_us1 {
+    clip-path: none;
+}
 }
 
 @media (max-width: 575.98px) {

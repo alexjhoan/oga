@@ -104,11 +104,11 @@ function dataSubmited(data) {
   });
 }
 
-function submited(event) {
+function submited() {
   const form = document.querySelector('#contactForm')
   let utm_source_val = ''
   const utm_campaign_val = getParameterByName('utm_campaign');
-  if (url.includes('atlas')) {
+  if (window.location.href.includes('atlas')) {
     utm_source_val = "bancoatlas"
   } else {
     utm_source_val = getParameterByName('utm_source');

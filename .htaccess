@@ -1,0 +1,56 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.ogaciudadjardin.com.py/$1 [R,L]
+
+RewriteCond %{HTTP_HOST} ^ogaciudadjardin.com.py [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://www.ogaciudadjardin.com.py/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^ogaciudadjardin.com.py [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ https://www.ogaciudadjardin.com.py/$1 [L,R=301]
+
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^proyecto$ /amp.html [L]
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^proyecto-(.+)$ /amp.html [L]
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+Header set Connection keep-alive
+<filesmatch "\.(ico|flv|gif|swf|eot|woff|otf|ttf|svg)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesmatch>
+<filesmatch "\.(jpg|jpeg|png|avif)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesmatch>
+# css and js should use private for proxy caching https://developers.google.com/speed/docs/best-practices/caching#LeverageProxyCaching
+<filesmatch "\.(css)$">
+Header set Cache-Control "max-age=31536000, private"
+</filesmatch>
+<filesmatch "\.(js)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesmatch>
+<filesmatch "\.(js)$">
+Header set Cache-Control "max-age=31536000, private, must-revalidate"
+</filesmatch>
+<filesMatch "\.(x?html?|php)$">
+Header set Cache-Control "max-age=600, private, must-revalidate"
+</filesMatch>
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+</IfModule>
